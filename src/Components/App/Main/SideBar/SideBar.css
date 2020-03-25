@@ -1,0 +1,25 @@
+#SideBar {
+    flex-direction: column;
+    height: 100%;
+}
+
+#Title {
+    /*display: flex;*/
+    order: 0;
+    height: 16%;
+    background-color: #6ec36e;
+}
+
+#MyLayers {
+    /*display: flex;*/
+    order: 1;
+    height: 42%;
+    background-color: lightgreen;
+}
+
+#Legend {
+    display: flex;
+    order: 2;
+    height: 42%;
+    background-color: #436c43;
+}

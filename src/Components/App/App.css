@@ -1,0 +1,19 @@
+#App {
+  flex-direction: column;
+  height: 100%;
+}
+
+#Main {
+  display: flex;
+  order: 0;
+  height: 95%;
+}
+
+#Footer {
+  display: flex;
+  order: 1;
+  height: 5%;
+  /*min-height: 30px;*/
+  color: orangered;
+  background-color: pink;
+}

@@ -1,0 +1,17 @@
+#Main {
+    flex-direction: row;
+}
+
+#SideBar {
+    display: flex;
+    order: 0;
+    width: 25%;
+    background-color: lightgreen;
+}
+
+#MyMap {
+    display: flex;
+    order: 1;
+    width: 75%;
+    background-color: lightblue;
+}
