@@ -12,15 +12,19 @@ function MyLayers() {
                     <option value="joint">Joint VIIRS/ABI</option>
                 </select>
             </div>
+
             <p>Transparency</p>
             <div className="slidecontainer">
                 <input type="range" min="0" max="100" value="30" className="slider" id="myRange" />
             </div>
+
             <p className="container"><input type="checkbox" checked="checked"/>Population Density</p>
+
             <p>Transparency</p>
             <div className="slidecontainer">
                 <input type="range" min="0" max="100" value="70" className="slider" id="myRange" />
             </div>
+
         </div>
     )
 }
