@@ -1,4 +1,4 @@
-const floodLayers = {
+const myFloodLayers = {
     "comp5": {
         "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite/{z}/{x}/{y}.png",
         "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
@@ -29,4 +29,4 @@ const floodLayers = {
     },
 };
 
-export default floodLayers;
+export default myFloodLayers;

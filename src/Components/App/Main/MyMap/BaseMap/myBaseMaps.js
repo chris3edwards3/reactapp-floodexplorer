@@ -1,4 +1,4 @@
-const baseMaps = {
+const myBaseMaps = {
     "esriImagery": {
         "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg",
         "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
@@ -21,4 +21,4 @@ const baseMaps = {
     },
 };
 
-export default baseMaps;
+export default myBaseMaps;
