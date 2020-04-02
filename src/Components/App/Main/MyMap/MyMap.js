@@ -1,23 +1,22 @@
 import React from 'react';
-import {Map, Marker, Popup} from 'react-leaflet';
-import BaseMap from './BaseMap/BaseMaps.js'
+import { Map } from 'react-leaflet';
+// import { Marker } from 'react-leaflet';
 import MapLayer from './MapLayer/MapLayer.js';
-import myLayerInfo from "./myLayerInfo.js";
 import './MyMap.css';
 
-function MyMap() {
+function MyMap(props) {
     // BaseMap Info
-    let baseMapName = myLayerInfo.baseMap["esriStreet"]; //Options: esriImagery, esriStreet, esriTopo, osmStandard"
+    let baseMapName = props.baseMapName;
 
     // Flood Layer Info
-    let isFloodVisible = true;
-    let floodLayer = myLayerInfo.flood["jointABI"]; //Options: comp5, comp1, jointABI, jointAHI
-    let floodOpacity = 0.8;
+    let isFloodVisible = props.isFloodVisible;
+    let floodLayer = props.floodLayer;
+    let floodOpacity = props.floodOpacity;
 
     // Extra Layer Info
-    let isExtraVisible = true;
-    let extraLayer = myLayerInfo.extra["pop"]; //Options: pop
-    let extraOpacity = 1.0;
+    let isExtraVisible = props.isExtraVisible;
+    let extraLayer = props.floodOpacity;
+    let extraOpacity = props.extraOpacity;
 
     // Initial Map Extents
     let initPosition = [0, 0];
@@ -33,12 +32,10 @@ function MyMap() {
     return (
         <div id="MyMap">
             <Map center={initPosition} zoom={initZoom}>
-                <BaseMap mapName={baseMapName}/>
+                <MapLayer layerName={baseMapName} opacity={1.0}/>
                 {isExtraVisible ? <MapLayer layerName={extraLayer} opacity={extraOpacity} /> : null}
                 {isFloodVisible ? <MapLayer layerName={floodLayer} opacity={floodOpacity} /> : null}
-
                 {/*<Marker position={initPosition} />*/}
-
             </Map>
         </div>
     )
