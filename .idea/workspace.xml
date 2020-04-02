@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/FloodLayer/FloodLayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/BaseMap/BaseMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/BaseMap/BaseMaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/BaseMap/myBaseMaps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/ExtraLayer/ExtraLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/ExtraLayer/myExtraLayers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/FloodLayer/FloodLayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/FloodLayer/myFloodLayers.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/TileLayerComponents/baseMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/BaseMap/BaseMaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/TileLayerComponents/extraLayers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/ExtraLayer/myExtraLayers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/TileLayerComponents/floodLayers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/FloodLayer/myFloodLayers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/baseMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/BaseMap/myBaseMaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/extraLayers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/ExtraLayer/ExtraLayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/floodLayers.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main/MyMap/FloodLayer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,15 +53,16 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\App" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\MapLayer" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\FloodLayer" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\ExtraLayer" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\BaseMap" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\TileLayerComponents" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\App" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.renders learn react link">
@@ -120,7 +122,8 @@
       <updated>1585020201193</updated>
       <workItem from="1585020202651" duration="4937000" />
       <workItem from="1585081424649" duration="18767000" />
-      <workItem from="1585587274948" duration="12967000" />
+      <workItem from="1585587274948" duration="13775000" />
+      <workItem from="1585780944858" duration="4923000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -136,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585598120001</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Divide Tile Layer components to Basemap, Extra, and Flood Layers.">
+      <created>1585601016869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585601016869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,37 +155,42 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Setup" />
     <MESSAGE value="Set Up all the Tile Layer Options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set Up all the Tile Layer Options" />
+    <MESSAGE value="Divide Tile Layer components to Basemap, Extra, and Flood Layers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Divide Tile Layer components to Basemap, Extra, and Flood Layers." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585598925590">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585786245516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585598925590" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585598119302">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786245516" />
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585601016057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585598119302" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585601016057" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1585590896239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585590896239" />
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1585162277132">
+    <state x="611" y="307" key="Github.ShareDialog" timestamp="1585601046108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585162277132" />
-    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1585162277131">
+    <state x="611" y="307" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585601046108" />
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1585602760343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585162277131" />
-    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1585162277131">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
+    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1585602760343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585162277131" />
-    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1585162277132">
+    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
+    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1585602760343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585162277132" />
+    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1585602760343">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1585022408659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
