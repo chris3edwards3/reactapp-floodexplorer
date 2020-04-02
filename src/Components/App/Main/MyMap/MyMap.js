@@ -2,20 +2,23 @@ import React from 'react';
 import { Map } from 'react-leaflet';
 // import { Marker } from 'react-leaflet';
 import MapLayer from './MapLayer/MapLayer.js';
+import myLayerInfo from '../myLayerInfo.js';
 import './MyMap.css';
 
 function MyMap(props) {
+
+    // console.log(props.mapProps);
     // BaseMap Info
-    let baseMapName = props.mapProps.baseMapName;
+    let baseMapName = myLayerInfo.baseMap[props.mapProps.baseMapName];
 
     // Flood Layer Info
     let isFloodVisible = props.mapProps.isFloodVisible;
-    let floodLayer = props.mapProps.floodLayer;
+    let floodLayer = myLayerInfo.flood[props.mapProps.floodLayer];
     let floodOpacity = props.mapProps.floodOpacity;
 
     // Extra Layer Info
     let isExtraVisible = props.mapProps.isExtraVisible;
-    let extraLayer = props.mapProps.extraLayer;
+    let extraLayer = myLayerInfo.extra[props.mapProps.extraLayer];
     let extraOpacity = props.mapProps.extraOpacity;
 
     // Initial Map Extents

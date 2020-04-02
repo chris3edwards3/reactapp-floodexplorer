@@ -8,27 +8,40 @@ class Main extends React.Component {
     constructor() {
         super();
         this.state = {
-            mapProps: {
-                baseMapName: myLayerInfo.baseMap["esriStreet"], // Options: esriImagery, esriStreet, esriTopo, osmStandard"
-                isFloodVisible: true,
-                floodLayer: myLayerInfo.flood["jointABI"], // Options: comp5, comp1, jointABI, jointAHI
-                floodOpacity: 1.0, // Between 0 and 1.0
-                isExtraVisible: true,
-                extraLayer: myLayerInfo.extra["pop"], // Options: pop
-                extraOpacity: 1.0,
-            },
+            baseMapName: "esriStreet", // Options: esriImagery, esriStreet, esriTopo, osmStandard"
+            isFloodVisible: true,
+            floodLayer: "comp5", // Options: comp5, comp1, jointABI, jointAHI
+            floodOpacity: 1.0, // Between 0 and 1.0
+            isExtraVisible: true,
+            extraLayer: "pop", // Options: pop
+            extraOpacity: 1.0,
+        };
+        this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this);
+    }
 
+    handleCheckBoxChange(id) {
+        if (id === "flood") {
+            this.setState(prevState => ({
+                isFloodVisible: !prevState.isFloodVisible
+            }))
+        } else if (id === "extra") {
+            this.setState(prevState => ({
+                isExtraVisible: !prevState.isExtraVisible
+            }))
         }
     }
 
     render() {
+        let mapProps = {...this.state};
+
         return (
             <div id="Main">
                 <SideBar
-                    mapProps={this.state.mapProps}
+                    mapProps={mapProps}
+                    handleCheckBoxChange={this.handleCheckBoxChange}
                 />
                 <MyMap
-                    mapProps={this.state.mapProps}
+                    mapProps={mapProps}
                 />
             </div>
         )

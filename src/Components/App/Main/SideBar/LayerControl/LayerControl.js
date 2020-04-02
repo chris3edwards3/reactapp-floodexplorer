@@ -15,19 +15,20 @@ function LayerControl(props) {
     let extraLayer = props.mapProps.extraLayer;
     let extraOpacity = props.mapProps.extraOpacity;
 
-    console.log("LayerControl Props:", props)
+    // console.log("LayerControl Props:", props);
 
     return (
         <div id="LayerControl">
             <p><input
                 type="checkbox"
                 checked={isFloodVisible}
-                onChange={() => console.log("Changed Flood Layer Check Box")}
+                // onChange={() => console.log("Changed Flood CheckBox")}
+                onChange={() => props.handleCheckBoxChange("flood")}
             />Flood Layer</p>
 
             <div>
                 <select
-                    value={floodLayer.name}
+                    // value={floodLayer}
                     onChange={() => console.log("Changed Flood Layer Drop Down")}
                 >
                     <option value="comp1">VIIRS 1-day Composite</option>
@@ -49,15 +50,15 @@ function LayerControl(props) {
             <p><input
                 type="checkbox"
                 checked={isExtraVisible}
-                onChange={() => console.log("Changed Extra Layer Checkbox")}
+                onChange={() => props.handleCheckBoxChange("extra")}
             />Additional Layer</p>
 
             <div>
                 <select
-                    value={extraLayer.name}
+                    // value={extraLayer}
                     onChange={() => console.log("Changed Extra Layer Dropdown")}
                 >
-                    <option value="21">Population Density (2015)</option>
+                    <option value="pop">Population Density (2015)</option>
                 </select>
             </div>
 
@@ -74,7 +75,7 @@ function LayerControl(props) {
 
             <div>
                 <select
-                    value={baseMapName.name}
+                    // value={baseMapName}
                     onChange={() => console.log("Changed BaseMap Dropdown")}
                 >
                     <option value="esriImagery">ESRI Imagery</option>

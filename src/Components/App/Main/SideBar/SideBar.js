@@ -11,6 +11,7 @@ function SideBar(props) {
             <Title />
             <LayerControl
                 mapProps={props.mapProps}
+                handleCheckBoxChange={props.handleCheckBoxChange}
             />
             <Legend
                 mapProps={props.mapProps}
