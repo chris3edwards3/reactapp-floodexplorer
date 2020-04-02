@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDownOption/DropDownOption.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/BaseMap/BaseMaps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/MyLayers/MyLayers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/MyLayers/MyLayers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="package.json" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,11 +59,11 @@
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\App" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl\CheckBox" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl\DropDown" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\MapLayer" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\FloodLayer" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\ExtraLayer" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\BaseMap" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.renders learn react link">
@@ -119,7 +124,7 @@
       <workItem from="1585020202651" duration="4937000" />
       <workItem from="1585081424649" duration="18767000" />
       <workItem from="1585587274948" duration="13775000" />
-      <workItem from="1585780944858" duration="9077000" />
+      <workItem from="1585780944858" duration="13920000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -149,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585786757373</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Simplify map hierarchy and make Main-state control which layers show and layer transparency.">
+      <created>1585804332555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585804332555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,17 +172,18 @@
     <MESSAGE value="Set Up all the Tile Layer Options" />
     <MESSAGE value="Divide Tile Layer components to Basemap, Extra, and Flood Layers." />
     <MESSAGE value="Simplify Map hierarchy and implement conditional rendering for flood and extra layers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify Map hierarchy and implement conditional rendering for flood and extra layers." />
+    <MESSAGE value="Simplify map hierarchy and make Main-state control which layers show and layer transparency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify map hierarchy and make Main-state control which layers show and layer transparency." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585786245516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786245516" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585786756567">
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585804331826">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786756567" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804331826" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1585590896239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -179,30 +192,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="611" y="307" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585601046108" />
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1585602760343">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1585804396091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
-    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1585602760343">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396091" />
+    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1585804396091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
-    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1585602760343">
+    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396091" />
+    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1585804396090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
-    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1585602760343">
+    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396090" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1585804396091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585602760343" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396091" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1585022408659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585022408659" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585786759357">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585804334089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786759357" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804334089" />
     <state x="463" y="10" width="609" height="804" key="find.popup" timestamp="1585148820553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
