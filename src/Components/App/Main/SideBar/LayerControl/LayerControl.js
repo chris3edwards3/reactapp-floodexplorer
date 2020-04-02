@@ -1,41 +1,86 @@
 import React from 'react';
 import './LayerControl.css';
 
-function LayerControl() {
+function LayerControl(props) {
+    // BaseMap Info
+    let baseMapName = props.mapProps.baseMapName;
+
+    // Flood Layer Info
+    let isFloodVisible = props.mapProps.isFloodVisible;
+    let floodLayer = props.mapProps.floodLayer;
+    let floodOpacity = props.mapProps.floodOpacity;
+
+    // Extra Layer Info
+    let isExtraVisible = props.mapProps.isExtraVisible;
+    let extraLayer = props.mapProps.extraLayer;
+    let extraOpacity = props.mapProps.extraOpacity;
+
+    console.log("LayerControl Props:", props)
+
     return (
         <div id="LayerControl">
-            <p><input type="checkbox" checked="checked"/>Flood Layer</p>
+            <p><input
+                type="checkbox"
+                checked={isFloodVisible}
+                onChange={() => console.log("Changed Flood Layer Check Box")}
+            />Flood Layer</p>
+
             <div>
-                <select>
-                    <option value="11">VIIRS 1-day Composite</option>
-                    <option value="12">VIIRS 5-day Composite</option>
-                    <option value="13">Joint VIIRS/ABI</option>
-                    <option value="14">Joint VIIRS/AHI</option>
+                <select
+                    value={floodLayer.name}
+                    onChange={() => console.log("Changed Flood Layer Drop Down")}
+                >
+                    <option value="comp1">VIIRS 1-day Composite</option>
+                    <option value="comp5">VIIRS 5-day Composite</option>
+                    <option value="jointABI">Joint VIIRS/ABI</option>
+                    <option value="jointAHI">Joint VIIRS/AHI</option>
                 </select>
             </div>
+
             <div>
-                <label>Transparency:  </label>
-                <input type="range" min="0" max="100" value="30" className="slider" id="myRange" />
+                <label>Transparency:</label>
+                <input type="range" min="0" max="100" value={floodOpacity*100}
+                       className="slider" id="floodOpacity"
+                       onChange={() => console.log("Changed Flood Opacity")}
+                />
             </div>
 
-            <p><input type="checkbox" checked="checked"/>Additional Layer</p>
+
+            <p><input
+                type="checkbox"
+                checked={isExtraVisible}
+                onChange={() => console.log("Changed Extra Layer Checkbox")}
+            />Additional Layer</p>
+
             <div>
-                <select>
+                <select
+                    value={extraLayer.name}
+                    onChange={() => console.log("Changed Extra Layer Dropdown")}
+                >
                     <option value="21">Population Density (2015)</option>
                 </select>
             </div>
+
             <div>
-                <label>Transparency:  </label>
-                <input type="range" min="0" max="100" value="70" className="slider" id="myRange" />
+                <label>Transparency:</label>
+                <input type="range" min="0" max="100" value={extraOpacity*100}
+                       className="slider" id="extraOpacity"
+                       onChange={() => console.log("Changed Extra Layer Opacity")}
+                />
             </div>
 
+
             <p>Base Map</p>
+
             <div>
-                <select>
-                    <option value="31">ESRI Imagery</option>
-                    <option value="32">ESRI Street</option>
-                    <option value="33">ESRI Topographic</option>
-                    <option value="34">OSM Standard</option>
+                <select
+                    value={baseMapName.name}
+                    onChange={() => console.log("Changed BaseMap Dropdown")}
+                >
+                    <option value="esriImagery">ESRI Imagery</option>
+                    <option value="esriStreet">ESRI Street</option>
+                    <option value="esriTopo">ESRI Topographic</option>
+                    <option value="osmStandard">OSM Standard</option>
                 </select>
             </div>
 

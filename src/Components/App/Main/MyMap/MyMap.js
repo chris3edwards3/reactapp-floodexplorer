@@ -6,17 +6,17 @@ import './MyMap.css';
 
 function MyMap(props) {
     // BaseMap Info
-    let baseMapName = props.baseMapName;
+    let baseMapName = props.mapProps.baseMapName;
 
     // Flood Layer Info
-    let isFloodVisible = props.isFloodVisible;
-    let floodLayer = props.floodLayer;
-    let floodOpacity = props.floodOpacity;
+    let isFloodVisible = props.mapProps.isFloodVisible;
+    let floodLayer = props.mapProps.floodLayer;
+    let floodOpacity = props.mapProps.floodOpacity;
 
     // Extra Layer Info
-    let isExtraVisible = props.isExtraVisible;
-    let extraLayer = props.floodOpacity;
-    let extraOpacity = props.extraOpacity;
+    let isExtraVisible = props.mapProps.isExtraVisible;
+    let extraLayer = props.mapProps.extraLayer;
+    let extraOpacity = props.mapProps.extraOpacity;
 
     // Initial Map Extents
     let initPosition = [0, 0];

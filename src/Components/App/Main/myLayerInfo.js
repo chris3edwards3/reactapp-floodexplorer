@@ -1,21 +1,25 @@
 const myLayerInfo = {
     "baseMap" : {
         "esriImagery": {
+            "name": "esriImagery",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg",
             "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
             "attText": "Esri",
         },
         "esriStreet": {
+            "name": "esriStreet",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg",
             "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
             "attText": "Esri",
         },
         "esriTopo": {
+            "name": "esriTopo",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.jpg",
             "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
             "attText": "Esri",
         },
         "osmStandard": {
+            "name": "osmStandard",
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             "attLink": "http://osm.org/copyright",
             "attText": "OpenStreetMap",
@@ -23,6 +27,7 @@ const myLayerInfo = {
     },
     "flood": {
         "comp5": {
+            "name": "comp5",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -30,6 +35,7 @@ const myLayerInfo = {
             "zoom": 3,
         },
         "comp1": {
+            "name": "comp5",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite1/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -37,6 +43,7 @@ const myLayerInfo = {
             "zoom": 3,
         },
         "jointABI": {
+            "name": "jointABI",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLD-joint-ABI/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -44,6 +51,7 @@ const myLayerInfo = {
             "zoom": 4,
         },
         "jointAHI": {
+            "name": "jointAHI",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLD-joint-AHI/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -53,6 +61,7 @@ const myLayerInfo = {
     },
     "extra": {
         "pop": {
+            "name": "pop",
             "url": "https://tiles.arcgis.com/tiles/VAI453sU9tG9rSmh/arcgis/rest/services/Population_Density_2015_tiles/MapServer/WMTS/tile/1.0.0/Population_Density_2015_tiles/default/default028mm/{z}/{y}/{x}.png",
             "attLink": "https://tiles.arcgis.com/tiles/VAI453sU9tG9rSmh/arcgis/rest/services/Population_Density_2015_tiles/MapServer?f=html&cacheKey=8754492dd1565e0c",
             // "attText": "CIESIN",

@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDownOption/DropDownOption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/MyLayers/MyLayers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/MyLayers/MyLayers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +119,8 @@
       <workItem from="1585020202651" duration="4937000" />
       <workItem from="1585081424649" duration="18767000" />
       <workItem from="1585587274948" duration="13775000" />
-      <workItem from="1585780944858" duration="13920000" />
+      <workItem from="1585780944858" duration="13941000" />
+      <workItem from="1585855025967" duration="3862000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -161,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585804332555</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Work on Layer Control.">
+      <created>1585809206918</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585809206918</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,17 +176,18 @@
     <MESSAGE value="Divide Tile Layer components to Basemap, Extra, and Flood Layers." />
     <MESSAGE value="Simplify Map hierarchy and implement conditional rendering for flood and extra layers." />
     <MESSAGE value="Simplify map hierarchy and make Main-state control which layers show and layer transparency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify map hierarchy and make Main-state control which layers show and layer transparency." />
+    <MESSAGE value="Work on Layer Control." />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on Layer Control." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585786245516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786245516" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585804331826">
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585809206091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804331826" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585809206091" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1585590896239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,22 +196,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="611" y="307" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585601046108" />
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1585804396091">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1585809210720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396091" />
-    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1585804396091">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585809210720" />
+    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1585809210720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396091" />
-    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1585804396090">
+    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585809210720" />
+    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1585809210720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396090" />
-    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1585804396091">
+    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585809210720" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1585809210720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585804396091" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585809210720" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1585022408659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

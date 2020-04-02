@@ -8,28 +8,27 @@ class Main extends React.Component {
     constructor() {
         super();
         this.state = {
-            baseMapName: myLayerInfo.baseMap["esriStreet"], //Options: esriImagery, esriStreet, esriTopo, osmStandard"
-            isFloodVisible: true,
-            floodLayer: myLayerInfo.flood["comp1"], //Options: comp5, comp1, jointABI, jointAHI
-            floodOpacity: 0.9, // Between 0 and 1.0
-            isExtraVisible: false,
-            extraLayer: myLayerInfo.extra["pop"], //Options: pop
-            extraOpacity: 0.5,
+            mapProps: {
+                baseMapName: myLayerInfo.baseMap["esriStreet"], // Options: esriImagery, esriStreet, esriTopo, osmStandard"
+                isFloodVisible: true,
+                floodLayer: myLayerInfo.flood["jointABI"], // Options: comp5, comp1, jointABI, jointAHI
+                floodOpacity: 1.0, // Between 0 and 1.0
+                isExtraVisible: true,
+                extraLayer: myLayerInfo.extra["pop"], // Options: pop
+                extraOpacity: 1.0,
+            },
+
         }
     }
 
     render() {
         return (
             <div id="Main">
-                <SideBar/>
+                <SideBar
+                    mapProps={this.state.mapProps}
+                />
                 <MyMap
-                    baseMapName={this.state.baseMapName}
-                    isFloodVisible={this.state.isFloodVisible}
-                    floodLayer={this.state.floodLayer}
-                    floodOpacity={this.state.floodOpacity}
-                    isExtraVisible={this.state.isExtraVisible}
-                    extraLayer={this.state.extraLayer}
-                    extraOpacity={this.state.extraOpacity}
+                    mapProps={this.state.mapProps}
                 />
             </div>
         )
