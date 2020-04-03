@@ -12,6 +12,8 @@ function SideBar(props) {
             <LayerControl
                 mapProps={props.mapProps}
                 handleCheckBoxChange={props.handleCheckBoxChange}
+                handleDropDown={props.handleDropDown}
+                handleSlider={props.handleSlider}
             />
             <Legend
                 mapProps={props.mapProps}

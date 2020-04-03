@@ -1,25 +1,29 @@
 const myLayerInfo = {
     "baseMap" : {
         "esriImagery": {
-            "name": "esriImagery",
+            "shortName": "esriImagery",
+            "longName": "Esri Imagery",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg",
             "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
             "attText": "Esri",
         },
         "esriStreet": {
-            "name": "esriStreet",
+            "shortName": "esriStreet",
+            "longName": "Esri Street",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg",
             "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
             "attText": "Esri",
         },
         "esriTopo": {
-            "name": "esriTopo",
+            "shortName": "esriTopo",
+            "longName": "Esri Topographic",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.jpg",
             "attLink": "https://services.arcgisonline.com/arcgis/rest/services",
             "attText": "Esri",
         },
         "osmStandard": {
-            "name": "osmStandard",
+            "shortName": "osmStandard",
+            "longName": "OSM Standard",
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             "attLink": "http://osm.org/copyright",
             "attText": "OpenStreetMap",
@@ -27,7 +31,8 @@ const myLayerInfo = {
     },
     "flood": {
         "comp5": {
-            "name": "comp5",
+            "shortName": "comp5",
+            "longName": "VIIRS 5-day Composite",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -35,7 +40,8 @@ const myLayerInfo = {
             "zoom": 3,
         },
         "comp1": {
-            "name": "comp5",
+            "shortName": "comp5",
+            "longName": "VIIRS 1-day Composite",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite1/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -43,7 +49,8 @@ const myLayerInfo = {
             "zoom": 3,
         },
         "jointABI": {
-            "name": "jointABI",
+            "shortName": "jointABI",
+            "longName": "Joint VIIRS/ABI",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLD-joint-ABI/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -51,7 +58,8 @@ const myLayerInfo = {
             "zoom": 4,
         },
         "jointAHI": {
-            "name": "jointAHI",
+            "shortName": "jointAHI",
+            "longName": "Joint VIIRS/AHI",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLD-joint-AHI/{z}/{x}/{y}.png",
             "attLink": "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             "attText": "NOAA JPSS GOES-R CIMSS GMU",
@@ -61,7 +69,8 @@ const myLayerInfo = {
     },
     "extra": {
         "pop": {
-            "name": "pop",
+            "shortName": "pop",
+            "longName": "Population Density (2015)",
             "url": "https://tiles.arcgis.com/tiles/VAI453sU9tG9rSmh/arcgis/rest/services/Population_Density_2015_tiles/MapServer/WMTS/tile/1.0.0/Population_Density_2015_tiles/default/default028mm/{z}/{y}/{x}.png",
             "attLink": "https://tiles.arcgis.com/tiles/VAI453sU9tG9rSmh/arcgis/rest/services/Population_Density_2015_tiles/MapServer?f=html&cacheKey=8754492dd1565e0c",
             // "attText": "CIESIN",

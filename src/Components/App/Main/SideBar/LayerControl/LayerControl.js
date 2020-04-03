@@ -2,34 +2,22 @@ import React from 'react';
 import './LayerControl.css';
 
 function LayerControl(props) {
-    // BaseMap Info
-    let baseMapName = props.mapProps.baseMapName;
-
-    // Flood Layer Info
     let isFloodVisible = props.mapProps.isFloodVisible;
-    let floodLayer = props.mapProps.floodLayer;
-    let floodOpacity = props.mapProps.floodOpacity;
-
-    // Extra Layer Info
     let isExtraVisible = props.mapProps.isExtraVisible;
-    let extraLayer = props.mapProps.extraLayer;
-    let extraOpacity = props.mapProps.extraOpacity;
-
-    // console.log("LayerControl Props:", props);
 
     return (
         <div id="LayerControl">
-            <p><input
+            <h5><input
                 type="checkbox"
                 checked={isFloodVisible}
-                // onChange={() => console.log("Changed Flood CheckBox")}
                 onChange={() => props.handleCheckBoxChange("flood")}
-            />Flood Layer</p>
+            />Flood Layer</h5>
 
             <div>
                 <select
-                    // value={floodLayer}
-                    onChange={() => console.log("Changed Flood Layer Drop Down")}
+                    id="floodLayerDropDown"
+                    defaultValue="comp5"
+                    onChange={() => props.handleDropDown("floodLayerDropDown")}
                 >
                     <option value="comp1">VIIRS 1-day Composite</option>
                     <option value="comp5">VIIRS 5-day Composite</option>
@@ -40,23 +28,23 @@ function LayerControl(props) {
 
             <div>
                 <label>Transparency:</label>
-                <input type="range" min="0" max="100" value={floodOpacity*100}
+                <input type="range" min="0" max="20" defaultValue="0"
                        className="slider" id="floodOpacity"
-                       onChange={() => console.log("Changed Flood Opacity")}
+                       onInput={() => props.handleSlider("floodOpacity")}
                 />
             </div>
 
 
-            <p><input
+            <h5><input
                 type="checkbox"
                 checked={isExtraVisible}
                 onChange={() => props.handleCheckBoxChange("extra")}
-            />Additional Layer</p>
+            />Additional Layer</h5>
 
             <div>
                 <select
-                    // value={extraLayer}
-                    onChange={() => console.log("Changed Extra Layer Dropdown")}
+                    id="extraLayerDropDown"
+                    onChange={() => props.handleDropDown("extraLayerDropDown")}
                 >
                     <option value="pop">Population Density (2015)</option>
                 </select>
@@ -64,19 +52,20 @@ function LayerControl(props) {
 
             <div>
                 <label>Transparency:</label>
-                <input type="range" min="0" max="100" value={extraOpacity*100}
+                <input type="range" min="0" max="20" defaultValue="0"
                        className="slider" id="extraOpacity"
-                       onChange={() => console.log("Changed Extra Layer Opacity")}
+                       onChange={() => props.handleSlider("extraOpacity")}
                 />
             </div>
 
 
-            <p>Base Map</p>
+            <h5>Base Map</h5>
 
             <div>
                 <select
-                    // value={baseMapName}
-                    onChange={() => console.log("Changed BaseMap Dropdown")}
+                    id="baseMapDropDown"
+                    defaultValue="esriStreet"
+                    onChange={() => props.handleDropDown("baseMapDropDown")}
                 >
                     <option value="esriImagery">ESRI Imagery</option>
                     <option value="esriStreet">ESRI Street</option>
