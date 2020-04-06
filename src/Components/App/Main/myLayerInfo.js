@@ -1,6 +1,7 @@
 const myLayerInfo = {
     "baseMap" : {
         "esriImagery": {
+            "type": "wmts",
             "shortName": "esriImagery",
             "longName": "Esri Imagery",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg",
@@ -8,6 +9,7 @@ const myLayerInfo = {
             "attText": "Esri",
         },
         "esriStreet": {
+            "type": "wmts",
             "shortName": "esriStreet",
             "longName": "Esri Street",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg",
@@ -15,6 +17,7 @@ const myLayerInfo = {
             "attText": "Esri",
         },
         "esriTopo": {
+            "type": "wmts",
             "shortName": "esriTopo",
             "longName": "Esri Topographic",
             "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.jpg",
@@ -22,6 +25,7 @@ const myLayerInfo = {
             "attText": "Esri",
         },
         "osmStandard": {
+            "type": "wmts",
             "shortName": "osmStandard",
             "longName": "OSM Standard",
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -31,6 +35,7 @@ const myLayerInfo = {
     },
     "flood": {
         "comp5": {
+            "type": "wmts",
             "shortName": "comp5",
             "longName": "VIIRS 5-day Composite",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite/{z}/{x}/{y}.png",
@@ -40,6 +45,7 @@ const myLayerInfo = {
             "zoom": 3,
         },
         "comp1": {
+            "type": "wmts",
             "shortName": "comp5",
             "longName": "VIIRS 1-day Composite",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite1/{z}/{x}/{y}.png",
@@ -49,6 +55,7 @@ const myLayerInfo = {
             "zoom": 3,
         },
         "jointABI": {
+            "type": "wmts",
             "shortName": "jointABI",
             "longName": "Joint VIIRS/ABI",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLD-joint-ABI/{z}/{x}/{y}.png",
@@ -58,6 +65,7 @@ const myLayerInfo = {
             "zoom": 4,
         },
         "jointAHI": {
+            "type": "wmts",
             "shortName": "jointAHI",
             "longName": "Joint VIIRS/AHI",
             "url": "https://floods.ssec.wisc.edu/tiles/RIVER-FLD-joint-AHI/{z}/{x}/{y}.png",
@@ -68,16 +76,40 @@ const myLayerInfo = {
         },
     },
     "extra": {
-        "pop": {
-            "shortName": "pop",
-            "longName": "Population Density (2015)",
-            "url": "https://tiles.arcgis.com/tiles/VAI453sU9tG9rSmh/arcgis/rest/services/Population_Density_2015_tiles/MapServer/WMTS/tile/1.0.0/Population_Density_2015_tiles/default/default028mm/{z}/{y}/{x}.png",
-            "attLink": "https://tiles.arcgis.com/tiles/VAI453sU9tG9rSmh/arcgis/rest/services/Population_Density_2015_tiles/MapServer?f=html&cacheKey=8754492dd1565e0c",
-            // "attText": "CIESIN",
-            "attText": "CIESIN Gridded Population of the World v4",
+        "pop2020": {
+            "type": "wms",
+            "shortName": "pop2020",
+            "longName": "Population Density (2020)",
+            "url": "https://sedac.ciesin.columbia.edu/geoserver/wms?",
+            "layers": "gpw-v4:gpw-v4-population-density_2020",
+            "attLink": "https://doi.org/10.7927/H49C6VHW",
+            "attText": "CIESIN SEDAC",
             "position": [10, 0],
             "zoom": 3,
         },
+        "pop2000": {
+            "type": "wms",
+            "shortName": "pop2000",
+            "longName": "Population Density (2000)",
+            "url": "https://sedac.ciesin.columbia.edu/geoserver/wms?",
+            "layers": "gpw-v4:gpw-v4-population-density_2000",
+            "attLink": "https://doi.org/10.7927/H49C6VHW",
+            "attText": "CIESIN SEDAC",
+            "position": [10, 0],
+            "zoom": 3,
+        },
+        "floodHazard": {
+            "type": "wms",
+            "shortName": "floodhazard",
+            "longName": "Global Flood Hazard Frequency and Distribution",
+            "url": "https://sedac.ciesin.columbia.edu/geoserver/wms?",
+            "layers": "ndh:ndh-flood-hazard-frequency-distribution",
+            "attLink": "https://doi.org/10.7927/H4668B3D",
+            "attText": "CIESIN SEDAC",
+            "position": [10, 0],
+            "zoom": 3,
+        }
+
     },
 };
 

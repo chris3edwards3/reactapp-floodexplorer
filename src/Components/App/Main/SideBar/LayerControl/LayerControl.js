@@ -1,3 +1,5 @@
+//TODO: Display Transparency Value = Transparency: 20
+
 import React from 'react';
 import './LayerControl.css';
 
@@ -46,7 +48,9 @@ function LayerControl(props) {
                     id="extraLayerDropDown"
                     onChange={() => props.handleDropDown("extraLayerDropDown")}
                 >
-                    <option value="pop">Population Density (2015)</option>
+                    <option value="pop2020">Population Density (2020)</option>
+                    <option value="pop2000">Population Density (2000)</option>
+                    <option value="floodHazard">Flood Hazard Freq. and Dist.</option>
                 </select>
             </div>
 

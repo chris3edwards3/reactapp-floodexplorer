@@ -1,3 +1,5 @@
+// Todo: useContext Hook (See the React Docs)
+
 import React from 'react';
 import './Main.css';
 import SideBar from './SideBar/SideBar.js';
@@ -11,8 +13,8 @@ class Main extends React.Component {
             isFloodVisible: true,
             floodLayer: "comp5", // Options: comp5, comp1, jointABI, jointAHI
             floodOpacity: 1.0, // Between 0 and 1.0
-            isExtraVisible: true,
-            extraLayer: "pop", // Options: pop
+            isExtraVisible: false,
+            extraLayer: "pop2020", // Options: pop
             extraOpacity: 1.0,
         };
         this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this);

@@ -1,7 +1,11 @@
+//TODO: Add Keys to elements I create
+//Todo: look at Scriptures mapped for idea of how to make multiple instances of a component using a loop
+
 import React from 'react';
 import { Map } from 'react-leaflet';
 // import { Marker } from 'react-leaflet';
 import MapLayer from './MapLayer/MapLayer.js';
+import WMSLayer from './WMSLayer/WMSLayer.js';
 import myLayerInfo from '../myLayerInfo.js';
 import './MyMap.css';
 
@@ -35,9 +39,10 @@ function MyMap(props) {
     return (
         <div id="MyMap">
             <Map center={initPosition} zoom={initZoom}>
-                <MapLayer layerName={baseMapName} opacity={1.0}/>
-                {isExtraVisible ? <MapLayer layerName={extraLayer} opacity={extraOpacity} /> : null}
-                {isFloodVisible ? <MapLayer layerName={floodLayer} opacity={floodOpacity} /> : null}
+                <MapLayer layerName={baseMapName} opacity={1.0} zIndex="0" />
+                {isExtraVisible ? <MapLayer layerName={extraLayer} opacity={extraOpacity} zIndex="1" /> : null}
+                {isFloodVisible ? <MapLayer layerName={floodLayer} opacity={floodOpacity} zIndex="2" /> : null}
+
                 {/*<Marker position={initPosition} />*/}
             </Map>
         </div>

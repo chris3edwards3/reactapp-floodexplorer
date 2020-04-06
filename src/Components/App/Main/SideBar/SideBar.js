@@ -4,6 +4,7 @@ import './SideBar.css';
 import Title from './Title/Title.js';
 import LayerControl from './LayerControl/LayerControl.js';
 import Legend from './Legend/Legend.js';
+import PopLegendPNG from "./Legend/PopLegend.png";
 
 function SideBar(props) {
     return (
@@ -15,9 +16,7 @@ function SideBar(props) {
                 handleDropDown={props.handleDropDown}
                 handleSlider={props.handleSlider}
             />
-            <Legend
-                mapProps={props.mapProps}
-            />
+            <img src={PopLegendPNG} alt="Pop-Legend" width="134" />
         </div>
     )
 }
