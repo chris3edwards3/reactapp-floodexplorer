@@ -6,6 +6,7 @@ import { Map } from 'react-leaflet';
 // import { Marker } from 'react-leaflet';
 import MapLayer from './MapLayer/MapLayer.js';
 import MapLegend from "./MapLegend/MapLegend";
+import FloodLegend from "./MapLegend/FloodLegend";
 import myLayerInfo from './myLayerInfo.js';
 import './MyMap.css';
 
@@ -37,8 +38,6 @@ function MyMap(props) {
         initZoom = extraLayer.zoom;
     }
 
-    console.log([floodLayer.legend]);
-
     return (
         <div id="MyMap">
             <Map center={initPosition} zoom={initZoom}>
@@ -46,8 +45,9 @@ function MyMap(props) {
                 {isExtraVisible ? <MapLayer layerName={extraLayer} opacity={extraOpacity} zIndex="1" /> : null}
                 {isFloodVisible ? <MapLayer layerName={floodLayer} opacity={floodOpacity} zIndex="2" /> : null}
 
-                <MapLegend layerName={floodLayer} />
-                <MapLegend layerName={extraLayer} />
+                <FloodLegend layerName={floodLayer} id="fL" isVisible={isFloodVisible} key="fL"/>
+                <MapLegend layerName={extraLayer} id="eL" isVisible={isExtraVisible} key="eL"/>
+
                 {/*<Marker position={initPosition} />*/}
             </Map>
         </div>

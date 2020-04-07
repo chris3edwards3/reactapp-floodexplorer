@@ -13,7 +13,7 @@ class Main extends React.Component {
             isFloodVisible: true,
             floodLayer: "comp5", // Options: comp5, comp1, jointABI, jointAHI
             floodOpacity: 1.0, // Between 0 and 1.0
-            isExtraVisible: false,
+            isExtraVisible: true,
             extraLayer: "pop2020", // Options: pop
             extraOpacity: 1.0,
         };
