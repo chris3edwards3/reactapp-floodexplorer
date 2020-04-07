@@ -1,0 +1,28 @@
+#Footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    color: #325c73;
+    background-color: #dddddd;
+    vertical-align: middle;
+    /*background-color: #f4f2db;*/
+}
+
+.icon {
+    height: 30px;
+    border-radius: 30%;
+    box-shadow: 2px 2px 3px #868686;
+    margin: 3px 10px 0 10px;
+}
+
+.icon:hover {
+    transform: scale(1.08);
+}
+
+#copyright {
+    position: absolute;
+    left: 13px;
+    font-family: "Lucida Sans", sans-serif;
+    font-size: .8em;
+}

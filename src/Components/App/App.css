@@ -1,19 +1,16 @@
 #App {
-  flex-direction: column;
-  height: 100%;
+  flex-direction: column-reverse;
+  height: 100vh;
 }
 
 #Main {
   display: flex;
-  order: 0;
-  height: 95%;
+  order: 1;
+  height: calc(100% - 45px);
 }
 
 #Footer {
   display: flex;
-  order: 1;
-  height: 5%;
-  /*min-height: 30px;*/
-  color: orangered;
-  background-color: pink;
+  order: 0;
+  height: 45px;
 }
