@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/FloodLegend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/FloodLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/FloodLegend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/mapLegends.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/ExtraLegend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/FloodLegend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/Legend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/Legend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/PopLegend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +131,7 @@
       <workItem from="1585780944858" duration="13941000" />
       <workItem from="1585855025967" duration="16527000" />
       <workItem from="1585966980392" duration="403000" />
-      <workItem from="1586182035703" duration="36708000" />
+      <workItem from="1586182035703" duration="37622000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -204,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586234670678</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Legends with separate Id's">
+      <created>1586241569935</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586241569935</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,17 +235,18 @@
     <MESSAGE value="Working Layer Control" />
     <MESSAGE value="Make it so I can add wms and wmts. Add extra layers. Start working on legend." />
     <MESSAGE value="Good Legend Progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Good Legend Progress" />
+    <MESSAGE value="Legends with separate Id's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Legends with separate Id's" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585786245516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786245516" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586234669810">
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586241569258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586234669810" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586241569258" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586182567352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -261,10 +275,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585022408659" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586207219431">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586241588663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586207219431" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586241588663" />
     <state x="463" y="10" width="609" height="804" key="find.popup" timestamp="1585148820553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

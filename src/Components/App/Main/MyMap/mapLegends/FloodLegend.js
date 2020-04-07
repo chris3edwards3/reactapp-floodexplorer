@@ -1,10 +1,8 @@
 import {MapControl, withLeaflet} from "react-leaflet";
-import "./MapLegend.css"
+import "./mapLegends.css"
 import L from "leaflet";
 
 let floodLegend;
-let extraLegend;
-let legend;
 let myMap;
 let createLegend;
 
@@ -16,12 +14,11 @@ class FloodLegend extends MapControl {
     componentDidMount() {
         let legendInfo = this.props.layerName.legend;
         const {map} = this.props.leaflet;
-        let id = this.props.id;
 
-        createLegend = function(legendInfo, map) {
-            legend = L.control({position: "bottomleft"});
+        createLegend = function (legendInfo, map) {
+            floodLegend = L.control({position: "bottomleft"});
 
-            legend.onAdd = () => {
+            floodLegend.onAdd = () => {
                 const div = L.DomUtil.create("div", "info legend");
                 let labels = [];
 
@@ -44,16 +41,7 @@ class FloodLegend extends MapControl {
             };
 
             myMap = map;
-
-            if (id === "fL") {
-                floodLegend = legend;
-                floodLegend.addTo(map);
-                console.log("Made new flood legend")
-            } else if (id === "eL") {
-                extraLegend = legend;
-                extraLegend.addTo(map);
-                console.log("made new flood legend")
-            }
+            floodLegend.addTo(myMap);
         };
 
         createLegend(legendInfo, map);
@@ -61,23 +49,15 @@ class FloodLegend extends MapControl {
     }
 
     componentDidUpdate(prevProps) {
-        let id = this.props.id;
         let prevLegend = prevProps.layerName.legend;
         let newLegend = this.props.layerName.legend;
         let prevVisible = prevProps.isVisible;
         let newVisible = this.props.isVisible;
 
         if (prevLegend !== newLegend || prevVisible !== newVisible) {
-            if (id === "fL") {
-                if (prevVisible) {
-                    floodLegend.remove(myMap);
-                    console.log("removed flood legend");
-                }
-            } else if (id === "eL") {
-                if (prevVisible) {
-                    extraLegend.remove(myMap);
-                    console.log("removed extra legend");
-                }
+            if (prevVisible) {
+                floodLegend.remove(myMap);
+                console.log("removed legend");
             }
             if (newVisible) {
                 createLegend(newLegend, myMap);

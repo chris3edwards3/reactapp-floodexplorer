@@ -3,10 +3,9 @@
 
 import React from 'react';
 import { Map } from 'react-leaflet';
-// import { Marker } from 'react-leaflet';
 import MapLayer from './MapLayer/MapLayer.js';
-import MapLegend from "./MapLegend/MapLegend";
-import FloodLegend from "./MapLegend/FloodLegend";
+import ExtraLegend from "./mapLegends/ExtraLegend";
+import FloodLegend from "./mapLegends/FloodLegend";
 import myLayerInfo from './myLayerInfo.js';
 import './MyMap.css';
 
@@ -46,9 +45,7 @@ function MyMap(props) {
                 {isFloodVisible ? <MapLayer layerName={floodLayer} opacity={floodOpacity} zIndex="2" /> : null}
 
                 <FloodLegend layerName={floodLayer} id="fL" isVisible={isFloodVisible} key="fL"/>
-                <MapLegend layerName={extraLayer} id="eL" isVisible={isExtraVisible} key="eL"/>
-
-                {/*<Marker position={initPosition} />*/}
+                <ExtraLegend layerName={extraLayer} id="eL" isVisible={isExtraVisible} key="eL"/>
             </Map>
         </div>
     )

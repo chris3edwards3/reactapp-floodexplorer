@@ -18,11 +18,3 @@
     background-color: lightblue;
     padding-bottom: 30px;
 }
-
-#Legend {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    /*height: 42%;*/
-    background-color: #436c43;
-}

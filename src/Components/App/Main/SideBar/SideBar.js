@@ -3,8 +3,6 @@ import './SideBar.css';
 
 import Title from './Title/Title.js';
 import LayerControl from './LayerControl/LayerControl.js';
-import Legend from './Legend/Legend.js';
-import PopLegendPNG from "./Legend/PopLegend.png";
 
 function SideBar(props) {
     return (
@@ -15,9 +13,6 @@ function SideBar(props) {
                 handleCheckBoxChange={props.handleCheckBoxChange}
                 handleDropDown={props.handleDropDown}
                 handleSlider={props.handleSlider}
-            />
-            <Legend
-                mapProps={props.mapProps}
             />
         </div>
     )

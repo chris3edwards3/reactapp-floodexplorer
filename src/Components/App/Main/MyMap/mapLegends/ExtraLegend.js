@@ -1,14 +1,12 @@
 import {MapControl, withLeaflet} from "react-leaflet";
-import "./MapLegend.css"
+import "./mapLegends.css"
 import L from "leaflet";
 
-// let floodLegend;
-// let extraLegend;
-let legend;
+let extraLegend;
 let myMap;
 let createLegend;
 
-class MapLegend extends MapControl {
+class ExtraLegend extends MapControl {
 
     createLeafletElement(props) {
     }
@@ -16,12 +14,11 @@ class MapLegend extends MapControl {
     componentDidMount() {
         let legendInfo = this.props.layerName.legend;
         const {map} = this.props.leaflet;
-        // let id = this.props.id;
 
         createLegend = function (legendInfo, map) {
-            legend = L.control({position: "bottomleft"});
+            extraLegend = L.control({position: "bottomleft"});
 
-            legend.onAdd = () => {
+            extraLegend.onAdd = () => {
                 const div = L.DomUtil.create("div", "info legend");
                 let labels = [];
 
@@ -44,17 +41,7 @@ class MapLegend extends MapControl {
             };
 
             myMap = map;
-            legend.addTo(myMap);
-
-            // if (id === "fL") {
-            //     floodLegend = legend;
-            //     floodLegend.addTo(map);
-            //     console.log("Made new flood legend")
-            // } else if (id === "eL") {
-            //     extraLegend = legend;
-            //     extraLegend.addTo(map);
-            //     console.log("made new flood legend")
-            // }
+            extraLegend.addTo(myMap);
         };
 
         createLegend(legendInfo, map);
@@ -62,7 +49,6 @@ class MapLegend extends MapControl {
     }
 
     componentDidUpdate(prevProps) {
-        // let id = this.props.id;
         let prevLegend = prevProps.layerName.legend;
         let newLegend = this.props.layerName.legend;
         let prevVisible = prevProps.isVisible;
@@ -70,31 +56,14 @@ class MapLegend extends MapControl {
 
         if (prevLegend !== newLegend || prevVisible !== newVisible) {
             if (prevVisible) {
-                legend.remove(myMap);
+                extraLegend.remove(myMap);
                 console.log("removed legend");
             }
             if (newVisible) {
                 createLegend(newLegend, myMap);
             }
         }
-
-        // if (prevLegend !== newLegend || prevVisible !== newVisible) {
-        //     if (id === "fL") {
-        //         if (prevVisible) {
-        //             floodLegend.remove(myMap);
-        //             console.log("removed flood legend");
-        //         }
-        //     } else if (id === "eL") {
-        //         if (prevVisible) {
-        //             extraLegend.remove(myMap);
-        //             console.log("removed extra legend");
-        //         }
-        //     }
-        //     if (newVisible) {
-        //         createLegend(newLegend, myMap);
-        //     }
-        // }
     }
 }
 
-export default withLeaflet(MapLegend);
+export default withLeaflet(ExtraLegend);
