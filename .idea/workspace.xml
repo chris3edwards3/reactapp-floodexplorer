@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/legends/FloodLegend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/legends/PopLegend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/FloodLegend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/PopLegend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend/MapLegend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLegendInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/Legend.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/Legend.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/Legend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Legend/Legend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfoArray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Title/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/myLayerInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLegend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,11 +63,11 @@
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\App" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\MapLegend" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\MapLayer" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\Legend" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\public\legends" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl\CheckBox" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.renders learn react link">
@@ -133,7 +131,7 @@
       <workItem from="1585780944858" duration="13941000" />
       <workItem from="1585855025967" duration="16527000" />
       <workItem from="1585966980392" duration="403000" />
-      <workItem from="1586182035703" duration="15276000" />
+      <workItem from="1586182035703" duration="29805000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -198,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585887682427</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Make it so I can add wms and wmts. Add extra layers. Start working on legend.">
+      <created>1586207211843</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586207211843</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,17 +219,18 @@
     <MESSAGE value="Sending props down from Main to LayerControl" />
     <MESSAGE value="Flood and Extra CheckBoxes Work" />
     <MESSAGE value="Working Layer Control" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Layer Control" />
+    <MESSAGE value="Make it so I can add wms and wmts. Add extra layers. Start working on legend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make it so I can add wms and wmts. Add extra layers. Start working on legend." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585786245516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585786245516" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1585887681763">
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586207210925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585887681763" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586207210925" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586182567352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -253,10 +259,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585022408659" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585887684106">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586207219431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585887684106" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586207219431" />
     <state x="463" y="10" width="609" height="804" key="find.popup" timestamp="1585148820553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

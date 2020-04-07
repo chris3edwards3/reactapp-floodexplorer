@@ -10,10 +10,12 @@ import PopLegendPNG from "./PopLegend.png";
 function Legend() {
     return (
         <div id="Legend">
-            {/*<p>This is the Legend</p>*/}
-            {/*<img src={testLink} />*/}
-            {/*<img src={FloodLegendPNG} alt="Flood-Legend" width="268" height="529" />*/}
-            {/*<img src={PopLegendPNG} alt="Pop-Legend" width="134" />*/}
+            <p>This is the Legend</p>
+            <div>
+                <img className="legendImage" src={FloodLegendPNG} alt="Flood-Legend" />
+                <img className="legendImage" src={PopLegendPNG} alt="Pop-Legend" />
+            </div>
+
         </div>
     )
 }

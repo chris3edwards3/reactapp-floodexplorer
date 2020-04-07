@@ -16,7 +16,9 @@ function SideBar(props) {
                 handleDropDown={props.handleDropDown}
                 handleSlider={props.handleSlider}
             />
-            <img src={PopLegendPNG} alt="Pop-Legend" width="134" />
+            <Legend
+                mapProps={props.mapProps}
+            />
         </div>
     )
 }

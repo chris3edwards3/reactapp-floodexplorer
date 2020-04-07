@@ -1,0 +1,50 @@
+const myLegendInfo = {
+    "flood": [
+        { title: "<b>Non-Flood</b>" },
+        { color: "#000064", label: "MS" },
+        { color: "#c4a272", label: "LD" },
+        { color: "#b400e6", label: "SI" },
+        { color: "#ffffff", label: "SN" },
+        { color: "#00ffff", label: "IC" },
+        { color: "#c8c8c8", label: "CL" },
+        { color: "#646464", label: "CS" },
+        { color: "#0000ff", label: "WA" },
+        { title: "<b>% Inundation</b>" },
+        { color: "#ff0000", label: "90" },
+        { color: "#ff6400", label: "80" },
+        { color: "#ff9532", label: "70" },
+        { color: "#ffc800", label: "60" },
+        { color: "#ffff00", label: "50" },
+        { color: "#ffff96", label: "40" },
+        { color: "#c8ff00", label: "30" },
+        { color: "#00ff00", label: "20" },
+        { color: "#32ff65", label: "10" },
+    ],
+    "pop": [
+        { title: "<b>per sq. km</b>" },
+        { color: "#bd0026", label: ">1,000" },
+        { color: "#f03b20", label: "250-1,000" },
+        { color: "#fd8d3c", label: "25-250" },
+        { color: "#fab855", label: "5-25" },
+        { color: "#ffdaa6", label: "1-5" },
+        { color: "#fff2d1", label: "<1" },
+    ],
+    "floodHazard": [
+        { color: "#0571b0", label: "High" },
+        { color: "#74a9cf", label: "Med-High" },
+        { color: "#bdc9e1", label: "Med-Low" },
+        { color: "#f1eef6", label: "Low" },
+    ],
+    "propEcon": [
+        { color: "#2b8cbe", label: "High" },
+        { color: "#a6bddb", label: "Med" },
+        { color: "#ece7f2", label: "Low" },
+    ],
+    "totEcon": [
+        { color: "#2ca25f", label: "High" },
+        { color: "#99d8c9", label: "Med" },
+        { color: "#e5f5f9", label: "Low" },
+    ],
+};
+
+export default myLegendInfo;

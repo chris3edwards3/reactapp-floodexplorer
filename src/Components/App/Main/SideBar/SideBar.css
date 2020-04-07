@@ -6,20 +6,23 @@
 #Title {
     /*display: flex;*/
     order: 0;
-    height: 16%;
+    /*height: 30%;*/
     background-color: #6ec36e;
+    padding-bottom: 30px;
 }
 
-#MyLayers {
+#LayerControl {
     /*display: flex;*/
     order: 1;
-    height: 42%;
-    background-color: lightgreen;
+    /*height: 60%;*/
+    background-color: lightblue;
+    padding-bottom: 30px;
 }
 
 #Legend {
     display: flex;
+    flex-direction: column;
     order: 2;
-    height: 42%;
+    /*height: 42%;*/
     background-color: #436c43;
 }

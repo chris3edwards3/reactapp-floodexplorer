@@ -50,7 +50,9 @@ function LayerControl(props) {
                 >
                     <option value="pop2020">Population Density (2020)</option>
                     <option value="pop2000">Population Density (2000)</option>
-                    <option value="floodHazard">Flood Hazard Freq. and Dist.</option>
+                    <option value="floodHazard">Flood Hazard Frequency and Distribution (2003)</option>
+                    <option value="totEcon">Flood Total Economic Loss Risk (2000)</option>
+                    <option value="propEcon">Flood Proportional Economic Loss Risk (2000)</option>
                 </select>
             </div>
 
