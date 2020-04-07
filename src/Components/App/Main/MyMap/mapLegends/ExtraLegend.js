@@ -14,6 +14,7 @@ class ExtraLegend extends MapControl {
     componentDidMount() {
         let legendInfo = this.props.layerName.legend;
         const {map} = this.props.leaflet;
+        myMap = map;
 
         createLegend = function (legendInfo, map) {
             extraLegend = L.control({position: "bottomleft"});
@@ -40,11 +41,13 @@ class ExtraLegend extends MapControl {
                 return div;
             };
 
-            myMap = map;
-            extraLegend.addTo(myMap);
+            extraLegend.addTo(map);
         };
 
-        createLegend(legendInfo, map);
+        if (this.props.isVisible) {
+            createLegend(legendInfo, myMap);
+        }
+
 
     }
 

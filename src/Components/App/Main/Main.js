@@ -10,10 +10,10 @@ class Main extends React.Component {
         super();
         this.state = {
             baseMapName: "esriStreet", // Options: esriImagery, esriStreet, esriTopo, osmStandard"
-            isFloodVisible: true, // Needs to be true to start
+            isFloodVisible: true,
             floodLayer: "comp5", // Options: comp5, comp1, jointABI, jointAHI
             floodOpacity: 1.0, // Between 0 and 1.0
-            isExtraVisible: true, // Needs to be true to start
+            isExtraVisible: false,
             extraLayer: "pop2020", // Options: pop2020, pop2000, floodHazard, totEcon, propEcon
             extraOpacity: 1.0,
         };

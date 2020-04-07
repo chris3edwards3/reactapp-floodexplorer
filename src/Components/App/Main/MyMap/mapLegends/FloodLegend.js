@@ -14,6 +14,7 @@ class FloodLegend extends MapControl {
     componentDidMount() {
         let legendInfo = this.props.layerName.legend;
         const {map} = this.props.leaflet;
+        myMap = map;
 
         createLegend = function (legendInfo, map) {
             floodLegend = L.control({position: "bottomleft"});
@@ -40,11 +41,12 @@ class FloodLegend extends MapControl {
                 return div;
             };
 
-            myMap = map;
             floodLegend.addTo(myMap);
         };
 
-        createLegend(legendInfo, map);
+        if (this.props.isVisible) {
+            createLegend(legendInfo, map);
+        }
 
     }
 
