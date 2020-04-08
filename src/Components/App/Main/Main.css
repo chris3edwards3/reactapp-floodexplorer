@@ -1,19 +1,21 @@
 #Main {
     flex-direction: row;
+    position: relative;
+    z-index: 2;
 }
 
 #SideBar {
     display: flex;
     order: 0;
-    width: 25%;
-    box-shadow: -1px 4px 6px #868686;
+    width: 350px;
+    box-shadow: 0 4px 6px #868686;
+    position: relative;
+    z-index: 2;
 }
 
 #MyMap {
     display: flex;
     order: 1;
-    width: 75%;
+    width: calc(100% - 350px);
     box-shadow: -1px 4px 6px #868686;
-    /*box-shadow: 4px 4px 8px 0 #828282;*/
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }

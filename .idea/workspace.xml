@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/downArrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/myIconFiles/info.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/myIconFiles/legend.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/myIconFiles/question.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/mapLegends.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/mapLegends.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/SideBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/Title/Title.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +26,8 @@
       <list>
         <option value="package.json" />
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Footer/MyIcon" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Footer\MyIcon" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Footer\icons" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\MapLegend" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\MapLayer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl\DropDown" />
@@ -131,7 +135,7 @@
       <workItem from="1585855025967" duration="16527000" />
       <workItem from="1585966980392" duration="403000" />
       <workItem from="1586182035703" duration="38712000" />
-      <workItem from="1586295176274" duration="16704000" />
+      <workItem from="1586295176274" duration="24365000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -238,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586303999210</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Layer Control Styling.">
+      <created>1586319452135</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586319452135</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,17 +271,18 @@
     <MESSAGE value="Legends working. Make separate component js files in order to do so." />
     <MESSAGE value="Legend can start off." />
     <MESSAGE value="Footer Styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer Styling" />
+    <MESSAGE value="Layer Control Styling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Layer Control Styling." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586301832727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586301832727" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586303997090">
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586319451128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586303997090" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586319451128" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586182567352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,22 +291,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="611" y="307" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585601046108" />
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1586276046085">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom" timestamp="1586326716361">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586276046085" />
-    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1586276046085">
+    <state width="1515" height="133" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586326716361" />
+    <state width="1515" height="133" key="GridCell.Tab.0.center" timestamp="1586326716361">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586276046085" />
-    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1586276046085">
+    <state width="1515" height="133" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586326716361" />
+    <state width="1515" height="133" key="GridCell.Tab.0.left" timestamp="1586326716360">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586276046085" />
-    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1586276046085">
+    <state width="1515" height="133" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586326716360" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right" timestamp="1586326716361">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586276046085" />
+    <state width="1515" height="133" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586326716361" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1585022408659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

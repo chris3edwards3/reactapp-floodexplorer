@@ -12,7 +12,7 @@
     height: 30px;
     border-radius: 30%;
     box-shadow: 2px 2px 3px #868686;
-    margin: 3px 10px 0 10px;
+    margin: 0px 10px 0 10px;
     transition: transform .2s;
 }
 

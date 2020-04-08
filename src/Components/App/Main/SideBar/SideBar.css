@@ -10,8 +10,12 @@
 #Title {
     order: 0;
     padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 #LayerControl {
     order: 1;
+    position: relative;
+    z-index: 2;
 }
