@@ -1,0 +1,42 @@
+/*
+    Source: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+*/
+
+.slideContainer {
+    width: 80%;
+    padding: 10px 0 10px 45px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 120px;
+    height: 7px;
+    border-radius: 5px;
+    background: #dddddd;
+    outline: none;
+    opacity: .8;
+    -webkit-transition: .3s;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 20px;
+    border-radius: 20%;
+    background: #57c3c6;
+}
+
+.slider::-moz-range-thumb {
+    width: 12px;
+    height: 20px;
+    border-radius: 20%;
+    background: #57c3c6;
+    cursor: pointer;
+}

@@ -1,27 +1,17 @@
 #SideBar {
     flex-direction: column;
     height: 100%;
+    font-family: "Cambria", serif;
     color: #f7fdff;
-    /*color: #dee5ef;*/
-        /*based on street map*/
-    /*background-color: #325c73;*/
-        /*based on imagery base map*/
-    /*background-color: #143f6c;*/
     background-color: #40566b;
     overflow-y: scroll;
 }
 
 #Title {
-    /*display: flex;*/
     order: 0;
-    /*height: 30%;*/
     padding-bottom: 30px;
 }
 
 #LayerControl {
-    /*display: flex;*/
     order: 1;
-    /*height: 60%;*/
-    padding-bottom: 30px;
-    background-color: #f4f2db;
 }

@@ -8,7 +8,7 @@ function Title() {
     return (
         <div id="Title">
             <h2>Flood Explorer</h2>
-            <h4>This app allows users to explore different flood map layers.</h4>
+            <h4>explore different flood map layers.</h4>
             {/*<img src={testLink} />*/}
         </div>
     )

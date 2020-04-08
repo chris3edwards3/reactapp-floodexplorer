@@ -1,0 +1,35 @@
+/*
+Source: https://www.filamentgroup.com/lab/select-css.html
+ */
+
+.selectContainer {
+    padding: 0 0 5px 43px;
+    width: 80%;
+}
+.selectDrop {
+    display: block;
+    font-size: .8em;
+    font-family: "Lucida Sans", sans-serif;
+    font-weight: 700;
+    color: #40566b;
+    line-height: 1.2em;
+    padding: .3em 2em .35em .5em;
+    width: 232px;
+    box-sizing: border-box;
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #cfe5e6;
+    background-image: url("./downArrow.png"), linear-gradient(to bottom, #f7fdff 0%, #dddddd 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    cursor: pointer;
+}
+.selectDrop::-ms-expand {
+    display: none;
+}
+.selectDrop:focus {
+    outline: none;
+}
