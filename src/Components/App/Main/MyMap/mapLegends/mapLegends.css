@@ -9,6 +9,7 @@
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    font-size: 1.1em;
 }
 
 .info h4 {
@@ -18,13 +19,13 @@
 
 .legend {
     text-align: left;
-    line-height: 18px;
+    line-height: 1.4em;
     color: #555;
 }
 
 .legend i {
-    width: 18px;
-    height: 18px;
+    width: 1.3em;
+    height: 1.3em;
     float: left;
     margin-right: 8px;
     opacity: 1;

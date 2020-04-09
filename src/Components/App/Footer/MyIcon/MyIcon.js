@@ -1,5 +1,3 @@
-// TODO: Style the Modal Popup
-
 import React from 'react';
 import "./MyIcon.css";
 import questionIcon from "./myIconFiles/question.PNG";

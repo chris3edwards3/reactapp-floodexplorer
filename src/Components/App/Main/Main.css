@@ -7,7 +7,7 @@
 #SideBar {
     display: flex;
     order: 0;
-    width: 350px;
+    width: 325px;
     box-shadow: 0 4px 6px #868686;
     position: relative;
     z-index: 2;
@@ -16,6 +16,6 @@
 #MyMap {
     display: flex;
     order: 1;
-    width: calc(100% - 350px);
+    width: calc(100% - 325px);
     box-shadow: -1px 4px 6px #868686;
 }

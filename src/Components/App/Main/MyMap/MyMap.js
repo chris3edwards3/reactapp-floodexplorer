@@ -1,6 +1,3 @@
-//TODO: Add Keys to elements I create
-//Todo: look at Scriptures mapped for idea of how to make multiple instances of a component using a loop
-
 import React from 'react';
 import { Map } from 'react-leaflet';
 import MapLayer from './MapLayer/MapLayer.js';

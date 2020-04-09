@@ -1,5 +1,3 @@
-// TODO: Fix CSS style of legend: it goes bonkers on the laptop screen, fine on the desktop
-
 import {MapControl, withLeaflet} from "react-leaflet";
 import "./mapLegends.css"
 import L from "leaflet";

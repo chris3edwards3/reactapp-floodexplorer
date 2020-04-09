@@ -1,5 +1,6 @@
-// Todo: useContext Hook (See the React Docs)
-// Todo: original state should read from the menu on the lef.
+// TODO: Add Writing
+// maybeTodo: useContext Hook (See the React Docs)
+// maybeTodo: original state should read from the menu on the lef.
 
 import React from 'react';
 import './Main.css';
