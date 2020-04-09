@@ -49,7 +49,7 @@ const myLayerInfo = {
         },
         "comp1": {
             type: "wmts",
-            shortName: "comp5",
+            shortName: "comp1",
             longName: "VIIRS 1-day Composite",
             url: "https://floods.ssec.wisc.edu/tiles/RIVER-FLDglobal-composite1/{z}/{x}/{y}.png",
             attLink: "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
@@ -109,7 +109,7 @@ const myLayerInfo = {
         "floodHazard": {
             type: "wms",
             shortName: "floodHazard",
-            longName: "Flood Hazard Frequency and Distribution",
+            longName: "Flood Hazard Freq. & Dist",
             url: "https://sedac.ciesin.columbia.edu/geoserver/wms?",
             layers: "ndh:ndh-flood-hazard-frequency-distribution",
             attLink: "https://doi.org/10.7927/H4668B3D",
@@ -121,7 +121,7 @@ const myLayerInfo = {
         "totEcon": {
             type: "wms",
             shortName: "totEcon",
-            longName: "Flood Total Economic Loss Risk",
+            longName: "Total Economic Risk",
             url: "https://sedac.ciesin.columbia.edu/geoserver/wms?",
             layers: "ndh:ndh-flood-total-economic-loss-risk-deciles",
             attLink: "https://doi.org/10.7927/H4T151KP",
@@ -133,7 +133,7 @@ const myLayerInfo = {
         "propEcon": {
             type: "wms",
             shortName: "propEcon",
-            longName: "Flood Proportional Economic Loss Risk",
+            longName: "Proportional Economic Risk",
             url: "https://sedac.ciesin.columbia.edu/geoserver/wms?",
             layers: "ndh:ndh-flood-proportional-economic-loss-risk-deciles",
             attLink: "https://doi.org/10.7927/H4XS5S9Q",

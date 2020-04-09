@@ -1,12 +1,25 @@
 import React from "react";
 import "./DropDown.css";
-import DropDownOption from "./DropDownOption/DropDownOption.js";
+import myLayerInfo from "../../../MyMap/myLayerInfo.js";
 
-function DropDown() {
+function DropDown(props) {
+    let optObj = myLayerInfo[props.id];
+    let optArray = [];
+    for (let [, value] of Object.entries(optObj)) {
+        optArray.push(value);
+    }
+
     return (
-        <div>
-            <select>
-                <option value={1}>{VIIRS 1-day Composite}</option>
+        <div className="selectContainer">
+            <select
+                id={props.id + "DropDown"}
+                className="selectDrop"
+                defaultValue={props.defaultValue}
+                onChange={() => props.handleDropDown(props.id + "DropDown")}
+            >
+                {optArray.map( entry => (
+                    <option key={entry.shortName+"Opt"} value={entry.shortName}>{entry.longName}</option>
+                ))}
             </select>
         </div>
     )

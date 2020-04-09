@@ -42,11 +42,11 @@ class Main extends React.Component {
                 baseMapName: newLayer
             })
         }
-        if (id === "floodLayerDropDown") {
+        if (id === "floodDropDown") {
             this.setState( {
                 floodLayer: newLayer
             })
-        } else if (id === "extraLayerDropDown") {
+        } else if (id === "extraDropDown") {
             this.setState({
                 extraLayer: newLayer
             })

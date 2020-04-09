@@ -1,14 +1,15 @@
 import React from "react";
 import "./CheckBox.css";
 
-function CheckBox() {
+function CheckBox(props) {
     return (
-        <div>
-            <p className="container"><input type="checkbox" checked="checked"/>Flood Layer<input type="checkbox" checked="checked"/></p>
-        </div>
-        // <div>
-        //     <p className="container"><input type="checkbox" checked="checked"/>Flood Layer</p>
-        // </div>
+        <label className="checkContainer">{props.label}
+            <input
+                type="checkbox"
+                checked={props.checked}
+                onChange={() => props.handleCheckBoxChange(props.id)}
+            /><span className="checkMark" />
+        </label>
     )
 }
 
