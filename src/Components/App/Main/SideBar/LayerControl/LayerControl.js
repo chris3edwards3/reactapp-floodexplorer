@@ -1,8 +1,8 @@
-import React from 'react';
-import CheckBox from "./CheckBox/CheckBox.js";
-import DropDown from "./DropDown/DropDown.js";
-import Slider from "./Slider/Slider.js";
-import './LayerControl.css';
+import React from "react";
+import CheckBox from "./CheckBox/CheckBox";
+import DropDown from "./DropDown/DropDown";
+import Slider from "./Slider/Slider";
+import "./LayerControl.css";
 
 function LayerControl(props) {
 

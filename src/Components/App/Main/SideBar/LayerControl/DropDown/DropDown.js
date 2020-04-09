@@ -1,6 +1,6 @@
 import React from "react";
 import "./DropDown.css";
-import myLayerInfo from "../../../MyMap/myLayerInfo.js";
+import myLayerInfo from "../../../MyMap/myLayerInfo";
 
 function DropDown(props) {
     let optObj = myLayerInfo[props.id];

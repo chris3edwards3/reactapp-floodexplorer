@@ -1,5 +1,5 @@
-import React from 'react';
-import {TileLayer, WMSTileLayer} from 'react-leaflet';
+import React from "react";
+import {TileLayer, WMSTileLayer} from "react-leaflet";
 
 function MapLayer(props) {
     let layerName = props.layerName;

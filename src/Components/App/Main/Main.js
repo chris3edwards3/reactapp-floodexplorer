@@ -2,10 +2,10 @@
 // maybeTodo: useContext Hook (See the React Docs)
 // maybeTodo: original state should read from the menu on the lef.
 
-import React from 'react';
-import './Main.css';
-import SideBar from './SideBar/SideBar.js';
-import MyMap from './MyMap/MyMap.js';
+import React from "react";
+import "./Main.css";
+import SideBar from "./SideBar/SideBar";
+import MyMap from "./MyMap/MyMap";
 
 class Main extends React.Component {
     constructor() {

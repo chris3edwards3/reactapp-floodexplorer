@@ -1,15 +1,13 @@
-import React from 'react';
-import { Map } from 'react-leaflet';
-import MapLayer from './MapLayer/MapLayer.js';
+import React from "react";
+import { Map } from "react-leaflet";
+import MapLayer from "./MapLayer/MapLayer";
 import ExtraLegend from "./mapLegends/ExtraLegend";
 import FloodLegend from "./mapLegends/FloodLegend";
-import myLayerInfo from './myLayerInfo.js';
-import './MyMap.css';
-
+import myLayerInfo from "./myLayerInfo";
+import "./MyMap.css";
 
 function MyMap(props) {
 
-    // console.log(props.mapProps);
     // BaseMap Info
     let baseMapName = myLayerInfo.baseMap[props.mapProps.baseMapName];
 

@@ -1,7 +1,7 @@
 // TODO: Add content to modals
 
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 import MyIcon from "./MyIcon/MyIcon";
 
 function Footer() {

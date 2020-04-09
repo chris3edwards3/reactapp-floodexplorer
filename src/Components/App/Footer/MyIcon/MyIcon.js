@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./MyIcon.css";
 import questionIcon from "./myIconFiles/question.PNG";
 import infoIcon from "./myIconFiles/info.PNG";
@@ -11,10 +11,7 @@ let iconSource = {
 };
 
 let messageText = {
-    "info":
-`this is 
-the 
-information button`,
+    "info": "this is the information button",
     "legend": "this is the legend button",
     "question": "this is the question button",
 };

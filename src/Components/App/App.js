@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import Main from './Main/Main.js';
-import Footer from './Footer/Footer.js';
+import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
 
 function App() {
     return (
