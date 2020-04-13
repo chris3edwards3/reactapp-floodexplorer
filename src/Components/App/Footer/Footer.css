@@ -1,6 +1,6 @@
 #Footer {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     color: #325c73;
@@ -12,7 +12,7 @@
     height: 30px;
     border-radius: 30%;
     box-shadow: 2px 2px 3px #868686;
-    margin: 0px 10px 0 10px;
+    margin: 3px 10px 0 10px;
     transition: transform .2s;
 }
 
@@ -22,7 +22,7 @@
 
 #copyright {
     position: absolute;
-    left: 13px;
+    right: 1em;
     font-family: "Lucida Sans", sans-serif;
     font-size: .8em;
 }

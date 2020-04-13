@@ -22,10 +22,13 @@
     background-color: #f7fdff;
     color: #40566b;
     margin: auto;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
     border: 2px solid #40566b;
-    width: 80%;
+    width: 60%;
+    min-width: 400px;
+    max-height: 70%;
     border-radius: 1em;
+    /*overflow-y: scroll;*/
 }
 
 /* The Close Button */
@@ -42,4 +45,8 @@
     font-weight: bolder;
     text-decoration: none;
     cursor: pointer;
+}
+
+.citations {
+    font-size: .8em;
 }

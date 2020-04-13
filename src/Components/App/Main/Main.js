@@ -1,4 +1,3 @@
-// TODO: Add Writing
 // maybeTodo: useContext Hook (See the React Docs)
 // maybeTodo: original state should read from the menu on the lef.
 

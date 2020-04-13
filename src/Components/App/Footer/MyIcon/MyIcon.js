@@ -3,17 +3,18 @@ import "./MyIcon.css";
 import questionIcon from "./myIconFiles/question.PNG";
 import infoIcon from "./myIconFiles/info.PNG";
 import legendIcon from "./myIconFiles/legend.PNG";
+import aIcon from "./myIconFiles/A.PNG";
+import bIcon from "./myIconFiles/B.PNG";
+import fIcon from "./myIconFiles/F.PNG";
+import messageText from "./messageText";
 
 let iconSource = {
-    "info": infoIcon,
-    "legend": legendIcon,
-    "question": questionIcon,
-};
-
-let messageText = {
-    "info": "this is the information button",
-    "legend": "this is the legend button",
-    "question": "this is the question button",
+    additional: aIcon,
+    baseMap: bIcon,
+    flood: fIcon,
+    info: infoIcon,
+    legend: legendIcon,
+    question: questionIcon,
 };
 
 class MyIcon extends React.Component {

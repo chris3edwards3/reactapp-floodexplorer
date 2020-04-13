@@ -1,6 +1,6 @@
 const myLegendInfo = {
     "flood": [
-        { title: "<b>Non-Flood</b>" },
+        { title: "<b>General</b>" },
         { color: "#000064", label: "MS" },
         { color: "#c4a272", label: "LD" },
         { color: "#b400e6", label: "SI" },
