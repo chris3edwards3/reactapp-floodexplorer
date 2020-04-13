@@ -1,8 +1,6 @@
 import React from "react";
 import "./MyIcon.css";
 import questionIcon from "./myIconFiles/question.PNG";
-import infoIcon from "./myIconFiles/info.PNG";
-import legendIcon from "./myIconFiles/legend.PNG";
 import aIcon from "./myIconFiles/A.PNG";
 import bIcon from "./myIconFiles/B.PNG";
 import fIcon from "./myIconFiles/F.PNG";
@@ -12,8 +10,6 @@ let iconSource = {
     additional: aIcon,
     baseMap: bIcon,
     flood: fIcon,
-    info: infoIcon,
-    legend: legendIcon,
     question: questionIcon,
 };
 
@@ -41,15 +37,12 @@ class MyIcon extends React.Component {
             <div>
                 <img className="icon" src={iconSource[this.props.id]} alt={this.props.id} onClick={this.handleIconClick}/>
                 <div id={modalId} className="modal">
-                    {/*Modal Content*/}
                     <div className="modal-content">
                         <span className="close" onClick={this.handleSpanClick}>&times;</span>
                         <p>{messageText[this.props.id]}</p>
                     </div>
-
                 </div>
             </div>
-
         )
     }
 }

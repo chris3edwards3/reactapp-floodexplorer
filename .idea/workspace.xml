@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/myIconFiles/info.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/myIconFiles/legend.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/CheckBox/CheckBox.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +136,7 @@
       <workItem from="1586182035703" duration="38712000" />
       <workItem from="1586295176274" duration="28546000" />
       <workItem from="1586396124927" duration="4626000" />
-      <workItem from="1586794870470" duration="13336000" />
+      <workItem from="1586794870470" duration="14548000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -274,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586811473290</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Editing package.json and manifest.json">
+      <created>1586812628540</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586812628540</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,17 +312,18 @@
     <MESSAGE value="Fix Styling of Legend" />
     <MESSAGE value="Code Cleanup: &quot; and .js" />
     <MESSAGE value="Added information about App and Layers. Moved icons to the left." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added information about App and Layers. Moved icons to the left." />
+    <MESSAGE value="Editing package.json and manifest.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editing package.json and manifest.json" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586807932739">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586813718508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586807932739" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586812566807">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813718508" />
+    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586812627888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586812566807" />
+    <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586812627888" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586182567352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -340,10 +352,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586810981288" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586811475068">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586812629803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586811475068" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586812629803" />
     <state x="463" y="10" width="609" height="804" key="find.popup" timestamp="1585148820553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
