@@ -1,87 +1,78 @@
 // maybeTodo: useContext Hook (See the React Docs)
 
-import React from "react";
+import React, {useState} from "react";
 import "./Main.css";
 import SideBar from "./SideBar/SideBar";
 import MyMap from "./MyMap/MyMap";
 
-class Main extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            baseMapName: "esriStreet", // Options: esriImagery, esriStreet, esriTopo, osmStandard"
-            isFloodVisible: true,
-            floodLayer: "comp5", // Options: comp5, comp1, jointABI, jointAHI
-            floodOpacity: 1.0, // Between 0 and 1.0
-            isExtraVisible: false,
-            extraLayer: "pop2020", // Options: pop2020, pop2000, floodHazard, totEcon, propEcon
-            extraOpacity: 1.0,
-        };
-        this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this);
-        this.handleDropDown = this.handleDropDown.bind(this);
-        this.handleSlider = this.handleSlider.bind(this);
-    }
+const INITIAL_BASE_MAP = "esriStreet"; // Options: esriImagery, esriStreet, esriTopo, osmStandard"
+const INITIAL_FLOOD_VISIBLE = true;
+const INITIAL_FLOOD_LAYER = "comp5"; // Options: comp5, comp1, jointABI, jointAHI
+const INITIAL_FLOOD_OPACITY = 1.0; // Between 0 and 1.0
+const INITIAL_EXTRA_VISIBLE = false;
+const INITIAL_EXTRA_LAYER = "pop2020"; // Options: pop2020, pop2000, floodHazard, totEcon, propEcon
+const INITIAL_EXTRA_OPACITY = 0.9;
 
-    handleCheckBoxChange(id) {
+function Main() {
+    const [baseMapName, setBaseMap] = useState(INITIAL_BASE_MAP);
+    const [isFloodVisible, setFloodVisible] = useState(INITIAL_FLOOD_VISIBLE);
+    const [floodLayer, setFloodLayer] = useState(INITIAL_FLOOD_LAYER);
+    const [floodOpacity, setFloodOpacity] = useState(INITIAL_FLOOD_OPACITY);
+    const [isExtraVisible, setExtraVisible] = useState(INITIAL_EXTRA_VISIBLE);
+    const [extraLayer, setExtraLayer] = useState(INITIAL_EXTRA_LAYER);
+    const [extraOpacity, setExtraOpacity] = useState(INITIAL_EXTRA_OPACITY);
+
+    let mapProps = {
+        baseMapName,
+        isFloodVisible,
+        floodLayer,
+        floodOpacity,
+        isExtraVisible,
+        extraLayer,
+        extraOpacity,
+    };
+
+    const handleCheckBoxChange = function(id) {
         if (id === "flood") {
-            this.setState(prevState => ({
-                isFloodVisible: !prevState.isFloodVisible
-            }))
+            setFloodVisible(prevState => !prevState)
         } else if (id === "extra") {
-            this.setState(prevState => ({
-                isExtraVisible: !prevState.isExtraVisible
-            }))
+            setExtraVisible(prevState => !prevState)
         }
-    }
+    };
 
-    handleDropDown(id) {
+    const handleDropDown = function(id) {
         let newLayer = document.getElementById(id).value;
         if (id === "baseMapDropDown") {
-            this.setState({
-                baseMapName: newLayer
-            })
-        }
-        if (id === "floodDropDown") {
-            this.setState( {
-                floodLayer: newLayer
-            })
+            setBaseMap(newLayer)
+        } else if (id === "floodDropDown") {
+            setFloodLayer(newLayer)
         } else if (id === "extraDropDown") {
-            this.setState({
-                extraLayer: newLayer
-            })
+            setExtraLayer(newLayer)
         }
-    }
+    };
 
-    handleSlider(id) {
+    const handleSlider = function(id) {
         let newOpacity = 1 - (document.getElementById(id).value) / 20;
         if (id === "floodOpacity") {
-            this.setState({
-                floodOpacity: newOpacity
-            })
+            setFloodOpacity(newOpacity)
         } else if (id === "extraOpacity") {
-            this.setState( {
-                extraOpacity: newOpacity
-            })
+            setExtraOpacity(newOpacity)
         }
-    }
+    };
 
-    render() {
-        let mapProps = {...this.state};
-
-        return (
-            <div id="Main">
-                <SideBar
-                    mapProps={mapProps}
-                    handleCheckBoxChange={this.handleCheckBoxChange}
-                    handleDropDown={this.handleDropDown}
-                    handleSlider={this.handleSlider}
-                />
-                <MyMap
-                    mapProps={mapProps}
-                />
-            </div>
-        )
-    }
+    return (
+        <div id="Main">
+            <SideBar
+                mapProps={mapProps}
+                handleCheckBoxChange={handleCheckBoxChange}
+                handleDropDown={handleDropDown}
+                handleSlider={handleSlider}
+            />
+            <MyMap
+                mapProps={mapProps}
+            />
+        </div>
+    )
 }
 
 export default Main;
