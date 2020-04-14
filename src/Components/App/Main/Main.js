@@ -1,5 +1,3 @@
-// maybeTodo: useContext Hook (See the React Docs)
-
 import React, { useState } from "react";
 import "./Main.css";
 import SideBar from "./SideBar/SideBar";

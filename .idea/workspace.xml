@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="Refactoring of variables to be more clear.">
+    <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/ExtraLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/ExtraLegend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/FloodLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/FloodLegend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="hooks" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,19 +53,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Footer\MyIcon\myIconFiles" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Footer\MyIcon" />
-      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl\DropDown" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl\DropDown\DropDownOption" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap\WMSLayer" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components" />
       <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Footer\MyIcon\myIconFiles" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\MyMap" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Footer\MyIcon" />
+      <recent name="C:\Users\chris\WebstormProjects\reactapp-floodexplorer\src\Components\App\Main\SideBar\LayerControl" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.renders learn react link">
