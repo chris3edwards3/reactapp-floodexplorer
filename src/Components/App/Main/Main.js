@@ -11,7 +11,7 @@ const INITIAL_FLOOD_LAYER = "comp5"; // Options: comp5, comp1, jointABI, jointAH
 const INITIAL_FLOOD_OPACITY = 1.0; // Between 0 and 1.0
 const INITIAL_EXTRA_VISIBLE = false;
 const INITIAL_EXTRA_LAYER = "pop2020"; // Options: pop2020, pop2000, floodHazard, totEcon, propEcon
-const INITIAL_EXTRA_OPACITY = 0.9;
+const INITIAL_EXTRA_OPACITY = 1.0;
 
 function Main() {
     const [baseMapName, setBaseMap] = useState(INITIAL_BASE_MAP);

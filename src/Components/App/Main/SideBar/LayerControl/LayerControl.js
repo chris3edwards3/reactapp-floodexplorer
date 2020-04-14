@@ -18,10 +18,14 @@ function LayerControl(props) {
             />
             <DropDown
                 id="flood"
-                defaultValue="comp5"
+                defaultValue={props.mapProps.floodLayer}
                 handleDropDown={props.handleDropDown}
             />
-            <Slider id="floodOpacity" handleSlider={props.handleSlider}/>
+            <Slider
+                id="floodOpacity"
+                defaultValue={props.mapProps.floodOpacity}
+                handleSlider={props.handleSlider}
+            />
 
             {/* Additional Layer ***** */}
             <CheckBox
@@ -32,16 +36,20 @@ function LayerControl(props) {
             />
             <DropDown
                 id="extra"
-                defaultValue="pop2020"
+                defaultValue={props.mapProps.extraLayer}
                 handleDropDown={props.handleDropDown}
             />
-            <Slider id="extraOpacity" handleSlider={props.handleSlider}/>
+            <Slider
+                id="extraOpacity"
+                defaultValue={props.mapProps.extraOpacity}
+                handleSlider={props.handleSlider}
+            />
 
             {/* Base Map ***** */}
             <label className="checkContainer">BaseMap</label>
             <DropDown
                 id="baseMap"
-                defaultValue="esriStreet"
+                defaultValue={props.mapProps.baseMapName}
                 handleDropDown={props.handleDropDown}
             />
         </div>

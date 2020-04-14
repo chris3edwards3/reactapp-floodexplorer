@@ -4,6 +4,8 @@
     <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +134,7 @@
       <workItem from="1586295176274" duration="28546000" />
       <workItem from="1586396124927" duration="4626000" />
       <workItem from="1586794870470" duration="14809000" />
-      <workItem from="1586878009163" duration="9230000" />
+      <workItem from="1586878009163" duration="9763000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -288,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586813793701</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Convert Main.js to have functional component with useState hook.">
+      <created>1586892935817</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1586892935817</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,17 +326,19 @@
     <MESSAGE value="Added information about App and Layers. Moved icons to the left." />
     <MESSAGE value="Editing package.json and manifest.json" />
     <MESSAGE value="Code Cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Code Cleanup." />
+    <MESSAGE value="Convert Main.js to have functional component with useState hook." />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert Main.js to have functional component with useState hook." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586813718508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813718508" />
-    <state x="278" y="8" key="CommitChangelistDialog2" timestamp="1586813792926">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2268" y="10" key="CommitChangelistDialog2" timestamp="1586892935116">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813792926" />
+    <state x="2268" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586892935116" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586182567352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
