@@ -2,25 +2,25 @@ import React from "react";
 import {TileLayer, WMSTileLayer} from "react-leaflet";
 
 function MapLayer(props) {
-    let layerName = props.layerName;
+    let layerObj = props.layerObj;
     let opacity = props.opacity;
     let zIndex = props.zIndex;
 
-    if (layerName["type"] === "wmts") {
+    if (layerObj["type"] === "wmts") {
         return (
             <TileLayer
-                attribution={`&copy <a href=${layerName["attLink"]}>${layerName["attText"]}</a>`}
-                url={layerName["url"]}
+                attribution={`&copy <a href=${layerObj["attLink"]}>${layerObj["attText"]}</a>`}
+                url={layerObj["url"]}
                 opacity={opacity}
                 zIndex={zIndex}
             />
         )
-    } else if (layerName["type"] === "wms") {
+    } else if (layerObj["type"] === "wms") {
         return (
             <WMSTileLayer
-                attribution={`&copy <a href=${layerName["attLink"]}>${layerName["attText"]}</a>`}
-                url={layerName["url"]}
-                layers={layerName["layers"]}
+                attribution={`&copy <a href=${layerObj["attLink"]}>${layerObj["attText"]}</a>`}
+                url={layerObj["url"]}
+                layers={layerObj["layers"]}
                 opacity={opacity}
                 crossOrigin="false"
                 format="image/png"

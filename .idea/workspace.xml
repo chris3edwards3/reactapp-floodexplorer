@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="">
+    <list default="true" id="54571869-c781-4884-9c06-f746a224335b" name="Default Changelist" comment="Refactoring of variables to be more clear.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Footer/MyIcon/MyIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MapLayer/MapLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/MyMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/ExtraLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/ExtraLegend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/FloodLegend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/mapLegends/FloodLegend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/MyMap/myLayerInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/DropDown/DropDown.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/LayerControl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Main/SideBar/LayerControl/Slider/Slider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../map-scriptures-react 3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -134,7 +140,7 @@
       <workItem from="1586295176274" duration="28546000" />
       <workItem from="1586396124927" duration="4626000" />
       <workItem from="1586794870470" duration="14809000" />
-      <workItem from="1586878009163" duration="9763000" />
+      <workItem from="1586878009163" duration="18105000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -297,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586892935817</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Make it so default values on all of the layer controls are controlled by the state.">
+      <created>1586893377987</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1586893377987</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,22 +340,25 @@
     <MESSAGE value="Editing package.json and manifest.json" />
     <MESSAGE value="Code Cleanup." />
     <MESSAGE value="Convert Main.js to have functional component with useState hook." />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert Main.js to have functional component with useState hook." />
+    <MESSAGE value="Make it so default values on all of the layer controls are controlled by the state." />
+    <MESSAGE value="Refactoring of variables to be more clear." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring of variables to be more clear." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586813718508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813718508" />
-    <state x="2268" y="10" key="CommitChangelistDialog2" timestamp="1586892935116">
+    <state x="2268" y="10" key="CommitChangelistDialog2" timestamp="1586901512843">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813792926" />
-    <state x="2268" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586892935116" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586182567352">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2268" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586901512843" />
+    <state x="2606" y="212" key="FileChooserDialogImpl" timestamp="1586894179906">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586182567352" />
+    <state x="2606" y="212" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586894179906" />
     <state x="611" y="307" key="Github.ShareDialog" timestamp="1585601046108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -3,7 +3,7 @@ import "./DropDown.css";
 import myLayerInfo from "../../../MyMap/myLayerInfo";
 
 function DropDown(props) {
-    let optObj = myLayerInfo[props.id];
+    let optObj = myLayerInfo[props.layerGroup];
     let optArray = [];
     for (let [, value] of Object.entries(optObj)) {
         optArray.push(value);
@@ -12,10 +12,10 @@ function DropDown(props) {
     return (
         <div className="selectContainer">
             <select
-                id={props.id + "DropDown"}
+                id={props.id}
                 className="selectDrop"
                 defaultValue={props.defaultValue}
-                onChange={() => props.handleDropDown(props.id + "DropDown")}
+                onChange={() => props.handleDropDown(props.id)}
             >
                 {optArray.map( entry => (
                     <option key={entry.shortName+"Opt"} value={entry.shortName}>{entry.longName}</option>

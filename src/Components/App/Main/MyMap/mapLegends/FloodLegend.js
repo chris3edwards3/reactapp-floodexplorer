@@ -12,11 +12,11 @@ class FloodLegend extends MapControl {
     }
 
     componentDidMount() {
-        let legendInfo = this.props.layerName.legend;
+        let legendInfo = this.props.layerObj.legend;
         const {map} = this.props.leaflet;
         myMap = map;
 
-        createLegend = function (legendInfo, map) {
+        createLegend = function (legendInfo) {
             floodLegend = L.control({position: "bottomleft"});
 
             floodLegend.onAdd = () => {
@@ -51,15 +51,14 @@ class FloodLegend extends MapControl {
     }
 
     componentDidUpdate(prevProps) {
-        let prevLegend = prevProps.layerName.legend;
-        let newLegend = this.props.layerName.legend;
+        let prevLegend = prevProps.layerObj.legend;
+        let newLegend = this.props.layerObj.legend;
         let prevVisible = prevProps.isVisible;
         let newVisible = this.props.isVisible;
 
         if (prevLegend !== newLegend || prevVisible !== newVisible) {
             if (prevVisible) {
                 floodLegend.remove(myMap);
-                console.log("removed legend");
             }
             if (newVisible) {
                 createLegend(newLegend, myMap);

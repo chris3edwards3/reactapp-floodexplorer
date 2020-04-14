@@ -67,7 +67,7 @@ const myLayerInfo = {
             attText: "NOAA JPSS GOES-R CIMSS GMU",
             legend: myLegendInfo.flood,
             position: [0, -75],
-            zoom: 4,
+            zoom: 3,
         },
         "jointAHI": {
             type: "wmts",
@@ -77,8 +77,8 @@ const myLayerInfo = {
             attLink: "https://www.ssec.wisc.edu/flood-map-demo/flood-products/",
             attText: "NOAA JPSS GOES-R CIMSS GMU",
             legend: myLegendInfo.flood,
-            position: [0, 134],
-            zoom: 4,
+            position: [1, 134],
+            zoom: 3,
         },
     },
     "extra": {

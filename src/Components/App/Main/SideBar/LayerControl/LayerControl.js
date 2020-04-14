@@ -5,20 +5,20 @@ import Slider from "./Slider/Slider";
 import "./LayerControl.css";
 
 function LayerControl(props) {
-
     return (
         <div id="LayerControl">
 
             {/* Flood Layer ***** */}
             <CheckBox
+                id="floodCheck"
                 label="Flood Layer"
-                id="flood"
                 checked={props.mapProps.isFloodVisible}
                 handleCheckBoxChange={props.handleCheckBoxChange}
             />
             <DropDown
-                id="flood"
-                defaultValue={props.mapProps.floodLayer}
+                id="floodDropDown"
+                layerGroup="flood"
+                defaultValue={props.mapProps.floodLayerName}
                 handleDropDown={props.handleDropDown}
             />
             <Slider
@@ -29,14 +29,15 @@ function LayerControl(props) {
 
             {/* Additional Layer ***** */}
             <CheckBox
+                id="extraCheck"
                 label="Additional Layer"
-                id="extra"
                 checked={props.mapProps.isExtraVisible}
                 handleCheckBoxChange={props.handleCheckBoxChange}
             />
             <DropDown
-                id="extra"
-                defaultValue={props.mapProps.extraLayer}
+                id="extraDropDown"
+                layerGroup="extra"
+                defaultValue={props.mapProps.extraLayerName}
                 handleDropDown={props.handleDropDown}
             />
             <Slider
@@ -48,7 +49,8 @@ function LayerControl(props) {
             {/* Base Map ***** */}
             <label className="checkContainer">BaseMap</label>
             <DropDown
-                id="baseMap"
+                id="baseMapDropDown"
+                layerGroup="baseMap"
                 defaultValue={props.mapProps.baseMapName}
                 handleDropDown={props.handleDropDown}
             />

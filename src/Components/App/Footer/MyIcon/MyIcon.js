@@ -39,7 +39,7 @@ class MyIcon extends React.Component {
                 <div id={modalId} className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={this.handleSpanClick}>&times;</span>
-                        <p>{messageText[this.props.id]}</p>
+                        <div>{messageText[this.props.id]}</div>
                     </div>
                 </div>
             </div>

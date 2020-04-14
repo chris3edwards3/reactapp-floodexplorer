@@ -12,11 +12,11 @@ class ExtraLegend extends MapControl {
     }
 
     componentDidMount() {
-        let legendInfo = this.props.layerName.legend;
+        let legendInfo = this.props.layerObj.legend;
         const {map} = this.props.leaflet;
         myMap = map;
 
-        createLegend = function (legendInfo, map) {
+        createLegend = function (legendInfo) {
             extraLegend = L.control({position: "bottomleft"});
 
             extraLegend.onAdd = () => {
@@ -41,7 +41,7 @@ class ExtraLegend extends MapControl {
                 return div;
             };
 
-            extraLegend.addTo(map);
+            extraLegend.addTo(myMap);
         };
 
         if (this.props.isVisible) {
@@ -52,15 +52,14 @@ class ExtraLegend extends MapControl {
     }
 
     componentDidUpdate(prevProps) {
-        let prevLegend = prevProps.layerName.legend;
-        let newLegend = this.props.layerName.legend;
+        let prevLegend = prevProps.layerObj.legend;
+        let newLegend = this.props.layerObj.legend;
         let prevVisible = prevProps.isVisible;
         let newVisible = this.props.isVisible;
 
         if (prevLegend !== newLegend || prevVisible !== newVisible) {
             if (prevVisible) {
                 extraLegend.remove(myMap);
-                console.log("removed legend");
             }
             if (newVisible) {
                 createLegend(newLegend, myMap);
