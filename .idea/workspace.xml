@@ -167,7 +167,8 @@
       <workItem from="1586396124927" duration="4626000" />
       <workItem from="1586794870470" duration="14809000" />
       <workItem from="1586878009163" duration="18105000" />
-      <workItem from="1586902510988" duration="7647000" />
+      <workItem from="1586902510988" duration="7857000" />
+      <workItem from="1586990362084" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1585155212612</created>
@@ -358,14 +359,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586904353913</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Readme">
+      <created>1586920685300</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1586920685300</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Simplify Map hierarchy and implement conditional rendering for flood and extra layers." />
     <MESSAGE value="Simplify map hierarchy and make Main-state control which layers show and layer transparency." />
     <MESSAGE value="Work on Layer Control." />
     <MESSAGE value="Sending props down from Main to LayerControl" />
@@ -390,18 +397,19 @@
     <MESSAGE value="Merge useState hook branch, and then minor css adjustments." />
     <MESSAGE value="Fix Package.json" />
     <MESSAGE value="Fix Package.json with gh-pages stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Package.json with gh-pages stuff" />
+    <MESSAGE value="Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586813718508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813718508" />
-    <state x="2268" y="10" key="CommitChangelistDialog2" timestamp="1586904353224">
+    <state x="2268" y="10" key="CommitChangelistDialog2" timestamp="1586920684622">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="278" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813792926" />
-    <state x="2268" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586904353224" />
+    <state x="2268" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586920684622" />
     <state x="2606" y="212" key="FileChooserDialogImpl" timestamp="1586894179906">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -436,11 +444,11 @@
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586810981288" />
     <state x="2266" y="71" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586904129810" />
-    <state x="2371" y="184" key="Vcs.Push.Dialog.v2" timestamp="1586904355269">
+    <state x="2371" y="184" key="Vcs.Push.Dialog.v2" timestamp="1586920686518">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586813796291" />
-    <state x="2371" y="184" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586904355269" />
+    <state x="2371" y="184" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586920686518" />
     <state x="2689" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586904844543">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

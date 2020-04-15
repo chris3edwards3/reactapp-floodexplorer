@@ -1,6 +1,6 @@
 ## React App - Flood Explorer
 
-https://chris3edwards3.github.io/reactapp-floodexplorer/
+View app here: https://chris3edwards3.github.io/reactapp-floodexplorer/
 
 The purpose of this application is to show various satellite-based flood maps created as part of the [NOAA LEO/GEO Flood Mapping Product](https://www.ssec.wisc.edu/flood-map-demo/). Additional layers, such as population density, provide context to the flood maps.
 
@@ -23,7 +23,7 @@ The [NOAA LEO/GEO Flood Mapping Product](https://www.ssec.wisc.edu/flood-map-dem
 
 * VIIRS Composite: The composite products provide the best image after filtering out cloud cover. The maximum flood extent in the given time period is shown (5-days or 1-day).
 * Joint VIIRS/ABI: The ABI maps are more frequent but of a coarser resolution, and they only cover the Americas. This joint layer shows VIIRS wherever possible, but then fills in the gaps with ABI.
-* Joint VIIRS/AHI: The AHI is similar to ABI, but covering East Asia and Australasia. It is still experimental and has not been completely validated
+* Joint VIIRS/AHI: The AHI is similar to ABI, but covering East Asia and Australasia. It is still experimental and has not been completely validated.
 
 #### Additional Layers
 * Gridded Population of the World
@@ -38,7 +38,7 @@ Citations
 * Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank. 2005. Global Flood Proportional Economic Loss Risk Deciles. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/H4XS5S9Q. Accessed 13 April 2020.
 * Dilley, M., R.S. Chen, U. Deichmann, A.L. Lerner-Lam, M. Arnold, J. Agwe, P. Buys, O. Kjekstad, B. Lyon, and G. Yetman. 2005. Natural Disaster Hotspots: A Global Risk Analysis. Washington, D.C.: World Bank. https://doi.org/10.1596/0-8213-5930-4
 
-####Base Maps
+#### Base Maps
 [Esri - ArcGIS REST Services](https://services.arcgisonline.com/arcgis/rest/services)
 * Imagery Sources: Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community
 * Street Sources: Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, Esri Japan, METI, Esri China (Hong Kong), Esri Korea, Esri (Thailand), NGCC, (c) OpenStreetMap contributors, and the GIS User Community
