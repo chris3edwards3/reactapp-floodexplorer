@@ -49,3 +49,12 @@
 .citations {
     font-size: .8em;
 }
+
+@media screen and (max-width: 600px) {
+    .modal {
+        font-size: .9em;
+    }
+    .modal-content {
+        min-width: 80%;
+    }
+}

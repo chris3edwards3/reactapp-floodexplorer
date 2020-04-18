@@ -30,3 +30,18 @@
     margin-right: 8px;
     opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+    .info {
+        font-size: .8em;
+    }
+
+    .legend {
+        line-height: 1.1em;
+    }
+
+    .legend i {
+        width: 1.0em;
+        height: 1.0em;
+    }
+}

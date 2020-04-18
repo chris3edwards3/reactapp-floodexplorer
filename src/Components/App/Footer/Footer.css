@@ -8,6 +8,11 @@
     vertical-align: middle;
 }
 
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
 .icon {
     height: 30px;
     border-radius: 30%;
@@ -25,4 +30,27 @@
     right: 1em;
     font-family: "Lucida Sans", sans-serif;
     font-size: .8em;
+}
+
+@media screen and (max-width: 600px) {
+    #Footer {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        align-content: normal;
+        vertical-align: middle;
+    }
+
+    #icons {
+        order: 1;
+    }
+
+    #copyright {
+        position: relative;
+        right: auto;
+        order: 2;
+        padding-left: 10px;
+        padding-top: 2px;
+        font-size: .6em;
+    }
 }

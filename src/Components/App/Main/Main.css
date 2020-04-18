@@ -19,3 +19,21 @@
     width: calc(100% - 325px);
     box-shadow: -1px 4px 6px #868686;
 }
+
+@media screen and (max-width: 600px) {
+    #Main {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    #SideBar {
+        width: 100%;
+        min-height: 610px;
+    }
+
+    #MyMap {
+        width: 100%;
+        min-height: 80%;
+    }
+
+}

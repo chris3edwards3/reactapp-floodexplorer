@@ -15,3 +15,13 @@
   order: 0;
   height: 45px;
 }
+
+@media screen and (max-width: 600px) {
+  #Main {
+    height: calc(100% - 55px);
+  }
+
+  #Footer {
+    height: 55px;
+  }
+}
