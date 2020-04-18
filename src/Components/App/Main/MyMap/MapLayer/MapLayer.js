@@ -4,7 +4,6 @@ import {TileLayer, WMSTileLayer} from "react-leaflet";
 function MapLayer(props) {
     let layerObj = props.layerObj;
     let opacity = props.opacity;
-    let zIndex = props.zIndex;
 
     if (layerObj["type"] === "wmts") {
         return (
@@ -12,7 +11,6 @@ function MapLayer(props) {
                 attribution={`&copy <a href=${layerObj["attLink"]}>${layerObj["attText"]}</a>`}
                 url={layerObj["url"]}
                 opacity={opacity}
-                zIndex={zIndex}
             />
         )
     } else if (layerObj["type"] === "wms") {

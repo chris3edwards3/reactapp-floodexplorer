@@ -4,8 +4,9 @@ let messageText = {
     additional:
         <div>
             <h3>Additional Layers</h3>
+            <p>The purpose of the additional layers is to add context to the flood map. For example, floods have more impact when they occur in highly populated areas or in areas with vulnerable resources. To see the additional layer and the flood layer at the same time, increase the transparency of the layer on top. Additional layers include:</p>
             <ul>
-                <li>Gridded Population of the World</li>
+                <li>Gridded Population of the World: population density (people per sq km)</li>
                 <li>Global Flood Hazard Frequency and Distribution: based on extreme flood events between 1985 and 2003</li>
                 <li>Global Flood Total Economic Loss Risk: based on spatially allocated Gross Domestic Product (GDP)</li>
                 <li>Global Flood Proportional Economic Loss Risk: based on GDP weighted by hazard frequency and distribution</li>
@@ -44,9 +45,7 @@ let messageText = {
             <p>
                 The <a href="https://www.ssec.wisc.edu/flood-map-demo/"
                        target="_blank"
-                       rel="noopener noreferrer"> NOAA LEO/GEO Flood Mapping Product</a> is created in partnership
-                with JPSS, George Mason University, and the Cooperative Institute for Meteorological Satellite
-                Studies. For each layer type, the most recent flood map produced is shown.
+                       rel="noopener noreferrer"> NOAA LEO/GEO Flood Mapping Product</a> is created in partnership with JPSS, George Mason University, and the Cooperative Institute for Meteorological Satellite Studies. These flood maps are based on optical satellite imagery. Each flood layer is updated daily, and the most recent map is shown here. The flood layers include:
             </p>
             <ul>
                 <li>VIIRS Composite: The composite products provide the best image after filtering out cloud cover. The maximum flood extent in the given time period is shown (5-days or 1-day). </li>
@@ -74,10 +73,11 @@ let messageText = {
             <p>Visualization Options:</p>
             <ul>
                 <li>The user can turn the flood and additional layers on and off by clicking the check boxes.</li>
+                <li>The layer most recently turned on is the layer that is displayed on top.</li>
                 <li>The user may change the visible layer by clicking the drop-down and selecting the new layer.</li>
                 <li>The layer transparency may also be changed by adjusting the slider.</li>
             </ul>
-            <p>Additional icons give information about each layer group and an explanation of the flood legend.</p>
+            <p>Additional icons in the lower left corner give information about each layer group, including an explanation of the flood legend.</p>
         </div>,
 };
 

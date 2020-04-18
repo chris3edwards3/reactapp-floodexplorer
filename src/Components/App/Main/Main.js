@@ -9,7 +9,7 @@ const INITIAL_FLOOD_LAYER = "comp5"; // Options: comp5, comp1, jointABI, jointAH
 const INITIAL_FLOOD_OPACITY = 1.0; // Between 0 and 1.0
 const INITIAL_EXTRA_VISIBLE = false;
 const INITIAL_EXTRA_LAYER = "pop2020"; // Options: pop2020, pop2000, floodHazard, totEcon, propEcon
-const INITIAL_EXTRA_OPACITY = 1.0;
+const INITIAL_EXTRA_OPACITY = 0.5;
 
 function Main() {
     const [baseMapName, setBaseMapName] = useState(INITIAL_BASE_MAP);
@@ -32,29 +32,29 @@ function Main() {
 
     const handleCheckBoxChange = function(id) {
         if (id === "floodCheck") {
-            setFloodVisible(prevState => !prevState)
+            setFloodVisible(prevState => !prevState);
         } else if (id === "extraCheck") {
-            setExtraVisible(prevState => !prevState)
+            setExtraVisible(prevState => !prevState);
         }
     };
 
     const handleDropDown = function(id) {
         let newLayerName = document.getElementById(id).value;
         if (id === "baseMapDropDown") {
-            setBaseMapName(newLayerName)
+            setBaseMapName(newLayerName);
         } else if (id === "floodDropDown") {
-            setFloodLayerName(newLayerName)
+            setFloodLayerName(newLayerName);
         } else if (id === "extraDropDown") {
-            setExtraLayerName(newLayerName)
+            setExtraLayerName(newLayerName);
         }
     };
 
     const handleSlider = function(id) {
         let newOpacity = 1 - (document.getElementById(id).value) / 20;
         if (id === "floodOpacity") {
-            setFloodOpacity(newOpacity)
+            setFloodOpacity(newOpacity);
         } else if (id === "extraOpacity") {
-            setExtraOpacity(newOpacity)
+            setExtraOpacity(newOpacity);
         }
     };
 

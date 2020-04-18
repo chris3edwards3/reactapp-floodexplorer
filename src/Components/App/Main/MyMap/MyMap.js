@@ -35,9 +35,9 @@ function MyMap(props) {
     return (
         <div id="MyMap">
             <Map center={initPosition} zoom={initZoom}>
-                <MapLayer layerObj={baseMapObj} opacity={1.0} zIndex="0"/>
-                {isExtraVisible ? <MapLayer layerObj={extraLayerObj} opacity={extraOpacity} zIndex="1"/> : null}
-                {isFloodVisible ? <MapLayer layerObj={floodLayerObj} opacity={floodOpacity} zIndex="2"/> : null}
+                <MapLayer layerObj={baseMapObj} opacity={1.0} />
+                {isExtraVisible ? <MapLayer layerObj={extraLayerObj} opacity={extraOpacity} /> : null}
+                {isFloodVisible ? <MapLayer layerObj={floodLayerObj} opacity={floodOpacity} /> : null}
 
                 <FloodLegend layerObj={floodLayerObj} id="fL" isVisible={isFloodVisible} key="fL"/>
                 <ExtraLegend layerObj={extraLayerObj} id="eL" isVisible={isExtraVisible} key="eL"/>
